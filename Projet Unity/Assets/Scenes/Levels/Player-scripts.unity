@@ -23,7 +23,11 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+<<<<<<< HEAD
   m_AmbientIntensity: 0
+=======
+  m_AmbientIntensity: 1
+>>>>>>> main
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -352,13 +356,21 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
+<<<<<<< HEAD
   m_Height: 1.63
+=======
+  m_Height: 2
+>>>>>>> main
   m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
+<<<<<<< HEAD
   m_Center: {x: 0, y: 0.8, z: 0}
+=======
+  m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> main
 --- !u!4 &237223781
 Transform:
   m_ObjectHideFlags: 0
@@ -368,7 +380,11 @@ Transform:
   m_GameObject: {fileID: 237223778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: -0.012, y: 1.42477, z: 0.20911}
+>>>>>>> main
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -537,7 +553,11 @@ Transform:
   m_GameObject: {fileID: 739853863}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0.98, y: 0.48, z: -0.99}
+=======
+  m_LocalPosition: {x: 2.1, y: 0.89, z: 0.5}
+>>>>>>> main
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -864,7 +884,11 @@ Transform:
   m_GameObject: {fileID: 1218748634}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 719.49994, y: 0.80999756, z: -786}
+=======
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+>>>>>>> main
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1194,7 +1218,11 @@ GameObject:
   - component: {fileID: 2058053070}
   - component: {fileID: 2058053069}
   - component: {fileID: 2058053068}
+<<<<<<< HEAD
   - component: {fileID: 2058053071}
+=======
+  - component: {fileID: 2058053067}
+>>>>>>> main
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1202,6 +1230,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+=======
+--- !u!64 &2058053067
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058053066}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> main
 --- !u!23 &2058053068
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1268,12 +1321,18 @@ Transform:
   m_GameObject: {fileID: 2058053066}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 11.83, y: 1, z: 7.7748}
+=======
+  m_LocalPosition: {x: 1.24087, y: 0, z: 5.43769}
+  m_LocalScale: {x: 7.043, y: 1, z: 7.7748}
+>>>>>>> main
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!65 &2058053071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1295,6 +1354,8 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 9.999999}
   m_Center: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &2145847380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,7 +1817,11 @@ Transform:
   m_GameObject: {fileID: 766079892336322604}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: 0.012, y: -0.96777, z: -0.20911}
+>>>>>>> main
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12515,8 +12580,16 @@ MeshFilter:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+<<<<<<< HEAD
   - {fileID: 237223781}
   - {fileID: 1479739106}
   - {fileID: 739853867}
   - {fileID: 1218748637}
   - {fileID: 2058053070}
+=======
+  - {fileID: 2058053070}
+  - {fileID: 739853867}
+  - {fileID: 237223781}
+  - {fileID: 1479739106}
+  - {fileID: 1218748637}
+>>>>>>> main
