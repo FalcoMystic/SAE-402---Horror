@@ -21,6 +21,7 @@ public class ModePOVCamera : MonoBehaviour
     public GameObject flashUI; // Un simple Panel blanc pour l'effet flash
 
     private bool enModePOV = false;
+    private bool cameraSortie = false; // la caméra est entre les mains du joueur ?
 
     void Start()
     {
@@ -30,19 +31,34 @@ public class ModePOVCamera : MonoBehaviour
     }
 
     void Update()
-    {
-        // Gestion de l'entrée/sortie du mode POV
-        if (Input.GetKeyDown(touchePOV)) TogglePOV();
-        
-        // Si on range la caméra (C) alors qu'on est dedans, on sort proprement
-        if (Input.GetKeyDown(toucheRangeCam) && enModePOV) TogglePOV();
-
-        // Prendre une photo uniquement si on est en mode POV
-        if (enModePOV && Input.GetKeyDown(touchePhoto))
         {
-            StartCoroutine(PrendrePhotoPropre());
+            // 1. GESTION DE LA TOUCHE C (Sortir/Ranger l'objet caméra)
+            if (Input.GetKeyDown(toucheRangeCam))
+            {
+                if (enModePOV)
+                {
+                    // Si on range alors qu'on regardait dedans, on quitte le mode POV d'abord
+                    TogglePOV();
+                }
+
+                cameraSortie = !cameraSortie;
+                Debug.Log(cameraSortie ? "Caméra sortie" : "Caméra rangée");
+
+            }
+
+            // 2. GESTION DE LA TOUCHE V (Regarder dans la lentille)
+            // On ajoute la condition : il faut que cameraSortie soit TRUE
+            if (Input.GetKeyDown(touchePOV) && cameraSortie)
+            {
+                TogglePOV();
+            }
+
+            // 3. PHOTO (Seulement en POV)
+            if (enModePOV && Input.GetKeyDown(touchePhoto))
+            {
+                StartCoroutine(PrendrePhotoPropre());
+            }
         }
-    }
 
     IEnumerator PrendrePhotoPropre()
     {
