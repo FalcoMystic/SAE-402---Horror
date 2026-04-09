@@ -848,7 +848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683773726553509733}
   m_Layer: 0
-  m_Name: Bureau_position2
+  m_Name: Bureau_1x4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
