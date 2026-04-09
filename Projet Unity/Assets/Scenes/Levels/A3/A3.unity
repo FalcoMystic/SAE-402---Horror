@@ -1,0 +1,2092 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 2
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 1
+    m_PVRFilteringGaussRadiusAO: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &90541369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5388221521937114217, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &90541378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90541369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &90541379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90541369}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.836, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.418, y: 0.016999997, z: -0.041000243}
+--- !u!1 &104109509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4099779678869369548, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &104109518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104109509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &104109519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104109509}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.88100004, y: 0.034000088, z: 2.1000001}
+  m_Center: {x: 0.4405, y: 0.016999966, z: -0.040999994}
+--- !u!1 &195685824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4988134889510712058, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &195685833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195685824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &195685834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195685824}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.726, y: 0.033999994, z: 2.1}
+  m_Center: {x: 0.363, y: 0.017000474, z: -0.041000243}
+--- !u!1 &210547533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2883046264818756139, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &210547542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210547533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &210547543
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210547533}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.40300003, y: 0.017000474, z: -0.041000124}
+--- !u!1 &255110454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -959362375718449849, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &255110463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255110454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &255110464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255110454}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.856, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.428, y: 0.016999997, z: -0.041000243}
+--- !u!1 &406323159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -600622024330894494, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &406323168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406323159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &406323169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406323159}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.836, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.418, y: 0.017000474, z: -0.041000124}
+--- !u!1 &446096404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7729412952905565859, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &446096413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446096404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &446096414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446096404}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.836, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.418, y: 0.01700095, z: -0.041000243}
+--- !u!1 &475965467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1515647323388572250, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &475965476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475965467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &475965477
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475965467}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.896, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.448, y: 0.016999997, z: -0.041000243}
+--- !u!1 &537964105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5349277304578668526, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &537964114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537964105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &537964115
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537964105}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8210001, y: 0.034000088, z: 2.1000001}
+  m_Center: {x: 0.41050014, y: 0.01700001, z: -0.040999997}
+--- !u!1 &670782544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2743824956484694717, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &670782553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670782544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &670782554
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670782544}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.019, z: 2.0699997}
+  m_Center: {x: -0.40300003, y: 0.0095, z: -0.041000273}
+--- !u!1 &734088672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -540906955181116202, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &734088681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734088672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &734088682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734088672}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.40300003, y: 0.017000474, z: -0.041000124}
+--- !u!1 &912026612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1797865831893789876, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &912026621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912026612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &912026622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912026612}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.82100004, y: 0.034000088, z: 2.1}
+  m_Center: {x: -0.4104995, y: 0.01700001, z: -0.040999997}
+--- !u!1 &917561503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8333424654362843604, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &917561512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917561503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &917561513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917561503}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.40300003, y: 0.017000474, z: -0.041000124}
+--- !u!1 &937551575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2403075469369380947, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &937551584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937551575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &937551585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937551575}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: -0.40300003, y: 0.016999997, z: -0.041000243}
+--- !u!1 &940605334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5798985450294567747, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &940605343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940605334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &940605344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940605334}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.019, z: 2.0699997}
+  m_Center: {x: -0.40300003, y: 0.0095, z: -0.041000273}
+--- !u!1 &957448327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5248494863241903593, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &957448336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957448327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &957448337
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957448327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.836, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.418, y: 0.01700095, z: -0.041000243}
+--- !u!1 &966075187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3068980282108805349, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &966075196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966075187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &966075197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966075187}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.019, z: 2.0699997}
+  m_Center: {x: -0.40300003, y: 0.0095, z: -0.041000273}
+--- !u!1 &967675840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -375968071177978962, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &967675849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967675840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &967675850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967675840}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.019, z: 2.0699997}
+  m_Center: {x: -0.40300003, y: 0.0095, z: -0.041000273}
+--- !u!1 &974365366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1133208828543894955, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &974365375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974365366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &974365376
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974365366}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8460001, y: 0.034000088, z: 2.1}
+  m_Center: {x: 0.42300192, y: 0.016999984, z: -0.04100002}
+--- !u!1 &1238091773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -736931399716600479, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1238091782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238091773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1238091783
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238091773}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.836, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.418, y: 0.016999997, z: -0.041000243}
+--- !u!1 &1322038594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8968972164601183834, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1322038604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322038594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1322038605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322038594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.88100004, y: 0.034000088, z: 2.1000001}
+  m_Center: {x: 0.4405, y: 0.016999995, z: -0.041000113}
+--- !u!1 &1359702300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2333989465876162731, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1359702309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359702300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1359702310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359702300}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.841, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.4205, y: 0.017000474, z: -0.041000124}
+--- !u!1 &1360308708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8248711377649655181, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1360308717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360308708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1360308718
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360308708}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8360001, y: 0.034000088, z: 2.1}
+  m_Center: {x: 0.41800287, y: 0.016999984, z: -0.0409999}
+--- !u!1 &1533322018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -583830262117824356, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1533322027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533322018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1533322028
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533322018}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.836, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.418, y: 0.01700095, z: -0.041000243}
+--- !u!1 &1542274878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 363469670543658589, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1542274887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542274878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1542274888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542274878}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.82100004, y: 0.034000088, z: 2.1}
+  m_Center: {x: 0.41050047, y: 0.016999984, z: -0.0409999}
+--- !u!1 &1571254995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -161640158163943077, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1571255004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571254995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1571255005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571254995}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.836, y: 0.04999999, z: 2.0999997}
+  m_Center: {x: 0.418, y: 0.014999909, z: -0.041000124}
+--- !u!1 &1590733385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2640993646442094061, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1590733394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590733385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1590733395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590733385}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.019, z: 2.0699997}
+  m_Center: {x: -0.40300003, y: 0.0095, z: -0.041000273}
+--- !u!1 &1656320995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 25320835155643102, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1656321004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656320995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1656321005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656320995}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.841, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: -0.4205, y: 0.017000474, z: -0.041000124}
+--- !u!1 &1658624207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4061797198910572429, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1658624216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658624207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1658624217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658624207}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8360001, y: 0.034000088, z: 2.1}
+  m_Center: {x: 0.41800287, y: 0.016999984, z: -0.04100002}
+--- !u!1 &1675834304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7413436560015792701, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1675834313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675834304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1675834314
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675834304}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.86600006, y: 0.034000088, z: 2.1}
+  m_Center: {x: 0.433, y: 0.016999653, z: -0.040999994}
+--- !u!1 &1884281045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5854369223248247458, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1884281054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884281045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1884281055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884281045}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.80600005, y: 0.019, z: 2.0699997}
+  m_Center: {x: -0.40300003, y: 0.0095, z: -0.041000273}
+--- !u!1 &1929766391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7892481791011000951, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1929766400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929766391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1929766401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929766391}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.896, y: 0.034000088, z: 2.1}
+  m_Center: {x: 0.44799998, y: 0.016999817, z: -0.040999994}
+--- !u!1001 &1973964236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.141869
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -51.492485
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      propertyPath: m_Name
+      value: Salle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 5148817236446094103, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2743824956484694717, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 670782554}
+    - targetCorrespondingSourceObject: {fileID: 2743824956484694717, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 670782553}
+    - targetCorrespondingSourceObject: {fileID: -5854369223248247458, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1884281055}
+    - targetCorrespondingSourceObject: {fileID: -5854369223248247458, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1884281054}
+    - targetCorrespondingSourceObject: {fileID: -3068980282108805349, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 966075197}
+    - targetCorrespondingSourceObject: {fileID: -3068980282108805349, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 966075196}
+    - targetCorrespondingSourceObject: {fileID: 5798985450294567747, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 940605344}
+    - targetCorrespondingSourceObject: {fileID: 5798985450294567747, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 940605343}
+    - targetCorrespondingSourceObject: {fileID: -375968071177978962, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 967675850}
+    - targetCorrespondingSourceObject: {fileID: -375968071177978962, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 967675849}
+    - targetCorrespondingSourceObject: {fileID: -2640993646442094061, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1590733395}
+    - targetCorrespondingSourceObject: {fileID: -2640993646442094061, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1590733394}
+    - targetCorrespondingSourceObject: {fileID: 4201804144787757569, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2121914278}
+    - targetCorrespondingSourceObject: {fileID: 4201804144787757569, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2121914277}
+    - targetCorrespondingSourceObject: {fileID: -1515647323388572250, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 475965477}
+    - targetCorrespondingSourceObject: {fileID: -1515647323388572250, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 475965476}
+    - targetCorrespondingSourceObject: {fileID: 4061797198910572429, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1658624217}
+    - targetCorrespondingSourceObject: {fileID: 4061797198910572429, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1658624216}
+    - targetCorrespondingSourceObject: {fileID: -8248711377649655181, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1360308718}
+    - targetCorrespondingSourceObject: {fileID: -8248711377649655181, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1360308717}
+    - targetCorrespondingSourceObject: {fileID: -5248494863241903593, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 957448337}
+    - targetCorrespondingSourceObject: {fileID: -5248494863241903593, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 957448336}
+    - targetCorrespondingSourceObject: {fileID: -583830262117824356, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1533322028}
+    - targetCorrespondingSourceObject: {fileID: -583830262117824356, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1533322027}
+    - targetCorrespondingSourceObject: {fileID: -1311444960187365947, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1987946181}
+    - targetCorrespondingSourceObject: {fileID: -1311444960187365947, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1987946180}
+    - targetCorrespondingSourceObject: {fileID: 7729412952905565859, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 446096414}
+    - targetCorrespondingSourceObject: {fileID: 7729412952905565859, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 446096413}
+    - targetCorrespondingSourceObject: {fileID: -1133208828543894955, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 974365376}
+    - targetCorrespondingSourceObject: {fileID: -1133208828543894955, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 974365375}
+    - targetCorrespondingSourceObject: {fileID: 2883046264818756139, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 210547543}
+    - targetCorrespondingSourceObject: {fileID: 2883046264818756139, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 210547542}
+    - targetCorrespondingSourceObject: {fileID: -2403075469369380947, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 937551585}
+    - targetCorrespondingSourceObject: {fileID: -2403075469369380947, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 937551584}
+    - targetCorrespondingSourceObject: {fileID: -5388221521937114217, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 90541379}
+    - targetCorrespondingSourceObject: {fileID: -5388221521937114217, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 90541378}
+    - targetCorrespondingSourceObject: {fileID: -736931399716600479, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1238091783}
+    - targetCorrespondingSourceObject: {fileID: -736931399716600479, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1238091782}
+    - targetCorrespondingSourceObject: {fileID: -540906955181116202, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 734088682}
+    - targetCorrespondingSourceObject: {fileID: -540906955181116202, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 734088681}
+    - targetCorrespondingSourceObject: {fileID: -8333424654362843604, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 917561513}
+    - targetCorrespondingSourceObject: {fileID: -8333424654362843604, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 917561512}
+    - targetCorrespondingSourceObject: {fileID: -1797865831893789876, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 912026622}
+    - targetCorrespondingSourceObject: {fileID: -1797865831893789876, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 912026621}
+    - targetCorrespondingSourceObject: {fileID: 363469670543658589, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1542274888}
+    - targetCorrespondingSourceObject: {fileID: 363469670543658589, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1542274887}
+    - targetCorrespondingSourceObject: {fileID: -7892481791011000951, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1929766401}
+    - targetCorrespondingSourceObject: {fileID: -7892481791011000951, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1929766400}
+    - targetCorrespondingSourceObject: {fileID: 7413436560015792701, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1675834314}
+    - targetCorrespondingSourceObject: {fileID: 7413436560015792701, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1675834313}
+    - targetCorrespondingSourceObject: {fileID: -4099779678869369548, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 104109519}
+    - targetCorrespondingSourceObject: {fileID: -4099779678869369548, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 104109518}
+    - targetCorrespondingSourceObject: {fileID: 8968972164601183834, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1322038605}
+    - targetCorrespondingSourceObject: {fileID: 8968972164601183834, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1322038604}
+    - targetCorrespondingSourceObject: {fileID: -161640158163943077, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1571255005}
+    - targetCorrespondingSourceObject: {fileID: -161640158163943077, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1571255004}
+    - targetCorrespondingSourceObject: {fileID: -600622024330894494, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 406323169}
+    - targetCorrespondingSourceObject: {fileID: -600622024330894494, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 406323168}
+    - targetCorrespondingSourceObject: {fileID: -4988134889510712058, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 195685834}
+    - targetCorrespondingSourceObject: {fileID: -4988134889510712058, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 195685833}
+    - targetCorrespondingSourceObject: {fileID: -5349277304578668526, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 537964115}
+    - targetCorrespondingSourceObject: {fileID: -5349277304578668526, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 537964114}
+    - targetCorrespondingSourceObject: {fileID: -1866124124328376059, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2052725229}
+    - targetCorrespondingSourceObject: {fileID: -1866124124328376059, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2052725228}
+    - targetCorrespondingSourceObject: {fileID: -959362375718449849, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 255110464}
+    - targetCorrespondingSourceObject: {fileID: -959362375718449849, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 255110463}
+    - targetCorrespondingSourceObject: {fileID: 25320835155643102, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1656321005}
+    - targetCorrespondingSourceObject: {fileID: 25320835155643102, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1656321004}
+    - targetCorrespondingSourceObject: {fileID: 2333989465876162731, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1359702310}
+    - targetCorrespondingSourceObject: {fileID: 2333989465876162731, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1359702309}
+    - targetCorrespondingSourceObject: {fileID: -7029948723529949830, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1973964242}
+    - targetCorrespondingSourceObject: {fileID: 6507901977716847365, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1973964249}
+    - targetCorrespondingSourceObject: {fileID: -8961359253771211100, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1973964240}
+  m_SourcePrefab: {fileID: 100100000, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+--- !u!1 &1973964237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8961359253771211100, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1973964238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6507901977716847365, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1973964239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7029948723529949830, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1973964240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973964237}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 58.092545, y: 25.710186, z: 0}
+  m_Center: {x: 10.494811, y: -1.3189014, z: 0}
+--- !u!65 &1973964242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973964239}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 58.092545, y: 25.710186, z: 0}
+  m_Center: {x: 10.494811, y: -1.318901, z: 0}
+--- !u!64 &1973964249
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973964238}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6416302070336371891, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+--- !u!1 &1987946171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1311444960187365947, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1987946180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987946171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &1987946181
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987946171}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.836, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: 0.418, y: 0.01700095, z: -0.041000243}
+--- !u!1 &2052725219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1866124124328376059, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2052725228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052725219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &2052725229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052725219}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.856, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: -0.428, y: 0.016999997, z: -0.041000243}
+--- !u!1 &2121914268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4201804144787757569, guid: 119c752a2ccaa3642b1d846eeda2878d, type: 3}
+  m_PrefabInstance: {fileID: 1973964236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2121914277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121914268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  isOpen: 0
+  isLocked: 0
+  openAngle: 90
+  rotationAxis: {x: 0, y: 0, z: 1}
+  fallbackCameraObjectName: main_camera
+  lookReferenceAxis: {x: 1, y: 0, z: 0}
+  openAwayFromViewer: 1
+  speed: 3
+--- !u!65 &2121914278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121914268}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.896, y: 0.033999994, z: 2.0999997}
+  m_Center: {x: -0.448, y: 0.016999997, z: -0.041000243}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 1973964236}

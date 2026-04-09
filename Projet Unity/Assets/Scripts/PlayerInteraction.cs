@@ -20,7 +20,8 @@ public class PlayerInteraction : MonoBehaviour
                 if (door != null)
                 {
                     Debug.Log("Super, l'objet a bien le script Door ! Ouverture...");
-                    door.ToggleDoor();
+                    Transform interactor = playerCam != null ? playerCam.transform : transform;
+                    door.ToggleDoor(interactor);
                 }
                 else
                 {
