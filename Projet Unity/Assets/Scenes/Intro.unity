@@ -579,7 +579,7 @@ MonoBehaviour:
   delaiAvantTexte: 2
   delaiApresTexte: 4
   vitesseEcriture: 0.05
-  nomDeLaSceneDeJeu: Player-scripts
+  nomDeLaSceneDeJeu: A2
 --- !u!4 &512673245
 Transform:
   m_ObjectHideFlags: 0
