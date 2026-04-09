@@ -12,11 +12,12 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/Assets/Furniture Mega Pack/
-/Assets/Next-gen Electronics Pack/
 /Assets/PolyKebap/
+/Assets/Next-gen Electronics Pack/
+/Assets/Furniture Mega Pack/
+/Assets/AllSkyFree/
 /Assets/YughuesFreeConcreteMaterials/
-
+/Assets/YughuesFreeArchitecturalMaterials/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -83,3 +84,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
+
