@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.029
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.06088102, g: 0.06518864, b: 0.07437822, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.27
-  m_AmbientMode: 0
+  m_AmbientIntensity: 1.13
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: f0eea44a2591b9c47bf2670cf999a714, type: 2}
   m_HaloStrength: 0.5
@@ -123081,7 +123081,7 @@ GameObject:
   - component: {fileID: 1104571375}
   - component: {fileID: 1104571374}
   m_Layer: 0
-  m_Name: Player
+  m_Name: LE_JOUEUR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126226,7 +126226,7 @@ GameObject:
   - component: {fileID: 1281274566}
   - component: {fileID: 1281274574}
   m_Layer: 0
-  m_Name: Rig&Animations
+  m_Name: Leonard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
