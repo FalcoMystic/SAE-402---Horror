@@ -25,6 +25,7 @@ public class ModePOVCamera : MonoBehaviour
     public LayerMask layerCible; 
 
     private bool enModePOV = false;
+    private bool cameraSortie = false; // la caméra est entre les mains du joueur ?
 
     void Start()
     {
@@ -33,22 +34,34 @@ public class ModePOVCamera : MonoBehaviour
     }
 
     void Update()
-    {
-        if (Input.GetKeyDown(touchePOV)) TogglePOV();
-        if (Input.GetKeyDown(toucheRangeCam) && enModePOV) TogglePOV();
-
-        // On dessine le rayon dans la fenêtre "Scene" pour t'aider à débugger
-        // La ligne sera rouge si tu es en mode POV
-        if (enModePOV)
         {
-            Debug.DrawRay(camLentille.transform.position, camLentille.transform.forward * distanceDetection, Color.red);
-        }
+            // 1. GESTION DE LA TOUCHE C (Sortir/Ranger l'objet caméra)
+            if (Input.GetKeyDown(toucheRangeCam))
+            {
+                if (enModePOV)
+                {
+                    // Si on range alors qu'on regardait dedans, on quitte le mode POV d'abord
+                    TogglePOV();
+                }
 
-        if (enModePOV && Input.GetKeyDown(touchePhoto))
-        {
-            StartCoroutine(PrendrePhotoPropre());
+                cameraSortie = !cameraSortie;
+                Debug.Log(cameraSortie ? "Caméra sortie" : "Caméra rangée");
+
+            }
+
+            // 2. GESTION DE LA TOUCHE V (Regarder dans la lentille)
+            // On ajoute la condition : il faut que cameraSortie soit TRUE
+            if (Input.GetKeyDown(touchePOV) && cameraSortie)
+            {
+                TogglePOV();
+            }
+
+            // 3. PHOTO (Seulement en POV)
+            if (enModePOV && Input.GetKeyDown(touchePhoto))
+            {
+                StartCoroutine(PrendrePhotoPropre());
+            }
         }
-    }
 
     IEnumerator PrendrePhotoPropre()
     {
