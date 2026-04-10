@@ -7,28 +7,25 @@ public class ModePOVCamera : MonoBehaviour
     [Header("Touches")]
     public KeyCode touchePOV = KeyCode.V; 
     public KeyCode toucheRangeCam = KeyCode.C;
-    public KeyCode touchePhoto = KeyCode.Mouse0;
+    public KeyCode touchePhoto = KeyCode.Mouse0; // Clic gauche pour prendre la photo
 
     [Header("Caméras")]
-    public Camera yeuxJoueur;
-    public Camera camLentille;
+    public Camera yeuxJoueur;  // Ta Main Camera
+    public Camera camLentille; // La caméra enfant du modèle 3D
 
     [Header("Rendu")]
     public RenderTexture textureEcran;
-    public GameObject uiCamera;
+    public GameObject uiCamera; // Ton Canvas avec le REC, la batterie, etc.
 
     [Header("Effets")]
-    public GameObject flashUI;
-
-    [Header("Détection Photo")]
-    public float distanceDetection = 10f; 
-    public LayerMask layerCible; 
+    public GameObject flashUI; // Un simple Panel blanc pour l'effet flash
 
     private bool enModePOV = false;
     private bool cameraSortie = false; // la caméra est entre les mains du joueur ?
 
     void Start()
     {
+        // On s'assure que tout est bien éteint au début
         if (uiCamera != null) uiCamera.SetActive(false);
         if (flashUI != null) flashUI.SetActive(false);
     }
@@ -65,58 +62,47 @@ public class ModePOVCamera : MonoBehaviour
 
     IEnumerator PrendrePhotoPropre()
     {
-        // --- LOGIQUE DE DETECTION AVEC DEBUG ---
-        Ray ray = camLentille.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, distanceDetection, layerCible))
-        {
-            PhotoTarget target = hit.collider.GetComponent<PhotoTarget>();
-            if (target != null)
-            {
-                // MESSAGE DE SUCCÈS
-                Debug.Log("<color=green>SUCCÈS :</color> Photo prise de " + hit.collider.gameObject.name);
-                target.TriggerPhotoEffect();
-            }
-            else
-            {
-                // MESSAGE D'OBJET SANS SCRIPT
-                Debug.Log("<color=yellow>INFO :</color> Tu as photographié '" + hit.collider.gameObject.name + "' mais il n'a pas de script PhotoTarget.");
-            }
-        }
-        else
-        {
-            // MESSAGE DE VIDE
-            Debug.Log("<color=red>ECHEC :</color> Tu as pris une photo du vide.");
-        }
-
-        // --- RESTE DU CODE (Flash et Capture) ---
+        // 1. MASQUER l'interface de la caméra (le REC, etc.)
         if (uiCamera != null) uiCamera.SetActive(false);
+
+        // 2. ACTIVER le flash blanc pour le feedback visuel
         if (flashUI != null) flashUI.SetActive(true);
 
+        // 3. ATTENDRE la fin de la frame pour que Unity valide le masquage de l'UI
         yield return new WaitForEndOfFrame();
 
+        // 4. CRÉER LE FICHIER
         string nomFichier = "Photo_" + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png";
+        // Enregistre dans le dossier persistant du PC (AppData/LocalLow/TonProjet)
         string cheminComplet = Path.Combine(Application.persistentDataPath, nomFichier);
+
+        // 5. CAPTURE D'ÉCRAN (L'écran est "propre" ici car l'UI est désactivée)
         ScreenCapture.CaptureScreenshot(cheminComplet);
 
+        // On attend un tout petit peu (0.05s) pour que le flash soit visible par le joueur
         yield return new WaitForSeconds(0.05f);
 
+        // 6. RÉACTIVER l'interface et éteindre le flash
         if (uiCamera != null) uiCamera.SetActive(true);
         if (flashUI != null) flashUI.SetActive(false);
+
+        Debug.Log("PHOTO PROPRE ENREGISTRÉE : " + cheminComplet);
     }
 
     void TogglePOV()
     {
         enModePOV = !enModePOV;
+
         if (enModePOV)
         {
+            // --- ON ENTRE DANS LA LENTILLE ---
             yeuxJoueur.enabled = false;
             camLentille.targetTexture = null;
             if (uiCamera != null) uiCamera.SetActive(true);
         }
         else
         {
+            // --- ON REVIENT AUX YEUX DU JOUEUR ---
             yeuxJoueur.enabled = true;
             camLentille.targetTexture = textureEcran;
             if (uiCamera != null) uiCamera.SetActive(false);
@@ -125,6 +111,7 @@ public class ModePOVCamera : MonoBehaviour
 
     void LateUpdate()
     {
+        // Aligne la caméra 3D sur le regard du joueur (pour regarder en haut/bas)
         if (enModePOV && yeuxJoueur != null && camLentille != null)
         {
             camLentille.transform.rotation = yeuxJoueur.transform.rotation;
