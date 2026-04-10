@@ -4,33 +4,46 @@ public class PlayerInteraction : MonoBehaviour
 {
     public float interactRange = 3f; 
     public Camera playerCam;
+    public GameObject texteInteraction; // Glisse ton texte TMP ici
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        // 1. DÉTECTION CONTINUE (pour afficher le message "Appuyer sur E")
+        Ray ray = playerCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        RaycastHit hit;
+
+        bool aTrouveInteraction = false;
+
+        if (Physics.Raycast(ray, out hit, interactRange))
         {
-            Ray ray = playerCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, interactRange))
+            // On vérifie si c'est une porte OU un item
+            if (hit.collider.GetComponent<Door>() != null || hit.collider.GetComponent<CollectibleItem>() != null)
             {
-                Debug.Log("Le rayon a touché : " + hit.collider.gameObject.name);
-
-                Door door = hit.collider.GetComponent<Door>();
-                if (door != null)
-                {
-                    Debug.Log("Super, l'objet a bien le script Door ! Ouverture...");
-                    Transform interactor = playerCam != null ? playerCam.transform : transform;
-                    door.ToggleDoor(interactor);
-                }
-                else
-                {
-                    Debug.Log("Aïe, l'objet touché n'a PAS le script Door d'attaché !");
-                }
+                aTrouveInteraction = true;
             }
-            else
+        }
+
+        // Affiche ou cache le texte "Appuyer sur E"
+        if (texteInteraction != null) texteInteraction.SetActive(aTrouveInteraction);
+
+
+        // 2. ACTION (quand on appuie sur E)
+        if (Input.GetKeyDown(KeyCode.E) && aTrouveInteraction)
+        {
+            // Vérification Porte
+            Door door = hit.collider.GetComponent<Door>();
+            if (door != null)
             {
-                Debug.Log("Le rayon n'a absolument rien touché (tu es trop loin ou l'objet n'a pas de Collider).");
+                door.ToggleDoor(playerCam.transform);
+                return; // On a fini
+            }
+
+            // Vérification Item
+            CollectibleItem item = hit.collider.GetComponent<CollectibleItem>();
+            if (item != null)
+            {
+                item.Ramasser();
+                return; // On a fini
             }
         }
     }
