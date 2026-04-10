@@ -1,13 +1,17 @@
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class CollectibleItem : MonoBehaviour
 {
-    public string itemName;
+    [Header("Configuration")]
+    public string nomDeLobjet = "Objet inconnu";
+    public string messageInteraction = "Appuyer sur E pour ramasser";
 
-    public void Collect()
+    public void Ramasser()
     {
-        Debug.Log("Objet ramassé : " + itemName);
-        // Ajouter du son ou mettre l'objet dans un inventaire
-        Destroy(gameObject);
+        Debug.Log(nomDeLobjet + " a été ajouté à l'inventaire.");
+
+        // futur script d'inventaire
+
+        Destroy(gameObject); // L'objet disparaît de la scène
     }
 }
