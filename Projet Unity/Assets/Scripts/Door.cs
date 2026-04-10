@@ -1,5 +1,9 @@
 using UnityEngine;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 // Force l'ajout d'un AudioSource sur l'objet
 [RequireComponent(typeof(AudioSource))]
 public class Door : MonoBehaviour
@@ -17,10 +21,15 @@ public class Door : MonoBehaviour
 
     [Header("Sons")]
     public AudioSource audioSource;
+    [Tooltip("Son quand la porte s'ouvre.")]
+    public AudioClip openSound;
     [Tooltip("Son quand la porte se ferme.")]
     public AudioClip closeSound;
     [Tooltip("Son quand on essaie d'ouvrir une porte verrouillée.")]
     public AudioClip lockedSound;
+    [Range(0f, 1f)]
+    public float volume = 1f;
+    public bool autoSetupAudio = true;
 
     private Quaternion closedRot;
     private Quaternion targetRot;
@@ -30,8 +39,7 @@ public class Door : MonoBehaviour
 
     void Start()
     {
-        if (audioSource == null) 
-            audioSource = GetComponent<AudioSource>();
+        EnsureAudioSetup();
 
         if (rotationAxis.sqrMagnitude < 0.0001f)
             rotationAxis = Vector3.forward;
@@ -55,10 +63,7 @@ public class Door : MonoBehaviour
         // --- 1. CAS : PORTE VERROUILLÉE ---
         if (isLocked)
         {
-            if (audioSource != null && lockedSound != null)
-            {
-                audioSource.PlayOneShot(lockedSound);
-            }
+            PlaySound(lockedSound);
             // On s'arrête ici : la porte ne s'ouvre pas
             return; 
         }
@@ -69,11 +74,7 @@ public class Door : MonoBehaviour
             isOpen = false;
             targetRot = closedRot;
             nextOpenDirection = -currentOpenDirection;
-
-            if (audioSource != null && closeSound != null)
-            {
-                audioSource.PlayOneShot(closeSound);
-            }
+            PlaySound(closeSound);
             return;
         }
 
@@ -112,7 +113,117 @@ public class Door : MonoBehaviour
         targetRot = openRot;
         currentOpenDirection = direction;
         hasOpenedOnce = true;
+        PlaySound(openSound);
     }
+
+    private void EnsureAudioSetup()
+    {
+        if (!autoSetupAudio)
+        {
+            return;
+        }
+
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 1f;
+        audioSource.rolloffMode = AudioRolloffMode.Linear;
+        audioSource.minDistance = 1.5f;
+        audioSource.maxDistance = 12f;
+
+#if UNITY_EDITOR
+        AutoAssignClipIfMissing(ref openSound, "door_open", "door-open", "open_door", "open", "creak");
+        AutoAssignClipIfMissing(ref closeSound, "door_close", "door-close", "close_door", "close", "slam");
+        AutoAssignClipIfMissing(ref lockedSound, "door_locked", "door-lock", "locked", "lock", "metal");
+
+    AutoAssignAnyClipIfMissing(ref openSound);
+    AutoAssignAnyClipIfMissing(ref closeSound);
+    AutoAssignAnyClipIfMissing(ref lockedSound);
+#endif
+
+        // Fallbacks: si un seul son est trouvé, on l'utilise pour tous les cas.
+        if (openSound == null) openSound = closeSound;
+        if (closeSound == null) closeSound = openSound;
+        if (lockedSound == null) lockedSound = closeSound != null ? closeSound : openSound;
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (audioSource == null || clip == null)
+        {
+            return;
+        }
+
+        audioSource.PlayOneShot(clip, volume);
+    }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        EnsureAudioSetup();
+    }
+
+    private void AutoAssignClipIfMissing(ref AudioClip target, params string[] keywords)
+    {
+        if (target != null)
+        {
+            return;
+        }
+
+        string[] guids = AssetDatabase.FindAssets("t:AudioClip");
+        foreach (string guid in guids)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            string fileName = System.IO.Path.GetFileNameWithoutExtension(path).ToLowerInvariant();
+
+            for (int i = 0; i < keywords.Length; i++)
+            {
+                if (!fileName.Contains(keywords[i]))
+                {
+                    continue;
+                }
+
+                AudioClip clip = AssetDatabase.LoadAssetAtPath<AudioClip>(path);
+                if (clip != null)
+                {
+                    target = clip;
+                    EditorUtility.SetDirty(this);
+                    return;
+                }
+            }
+        }
+    }
+
+    private void AutoAssignAnyClipIfMissing(ref AudioClip target)
+    {
+        if (target != null)
+        {
+            return;
+        }
+
+        string[] guids = AssetDatabase.FindAssets("t:AudioClip");
+        if (guids.Length == 0)
+        {
+            return;
+        }
+
+        string path = AssetDatabase.GUIDToAssetPath(guids[0]);
+        AudioClip clip = AssetDatabase.LoadAssetAtPath<AudioClip>(path);
+        if (clip != null)
+        {
+            target = clip;
+            EditorUtility.SetDirty(this);
+        }
+    }
+#endif
 
     private Transform ResolveLookSource(Transform interactor)
     {
