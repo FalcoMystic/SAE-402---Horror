@@ -1,27 +1,26 @@
 using UnityEngine;
 
+// Force l'ajout d'un AudioSource sur l'objet
+[RequireComponent(typeof(AudioSource))]
 public class Door : MonoBehaviour
 {
     public bool isOpen = false;
     public bool isLocked = false;
     
     [Header("Réglage de la rotation")]
-    [Tooltip("Angle d'ouverture en degrés.")]
     public float openAngle = 90f;
-
-    [Tooltip("Axe local de rotation de la porte. Par défaut: Z.")]
     public Vector3 rotationAxis = Vector3.forward;
-
-    [Tooltip("Nom de l'objet caméra recherché automatiquement en scène si nécessaire.")]
     public string fallbackCameraObjectName = "main_camera";
-
-    [Tooltip("Axe local servant à décider le côté gauche/droite de la porte.")]
     public Vector3 lookReferenceAxis = Vector3.right;
-
-    [Tooltip("Si activé, la porte s'ouvre à l'opposé du joueur/caméra (loin de toi).")]
     public bool openAwayFromViewer = true;
-    
     public float speed = 3f;
+
+    [Header("Sons")]
+    public AudioSource audioSource;
+    [Tooltip("Son quand la porte se ferme.")]
+    public AudioClip closeSound;
+    [Tooltip("Son quand on essaie d'ouvrir une porte verrouillée.")]
+    public AudioClip lockedSound;
 
     private Quaternion closedRot;
     private Quaternion targetRot;
@@ -31,10 +30,11 @@ public class Door : MonoBehaviour
 
     void Start()
     {
+        if (audioSource == null) 
+            audioSource = GetComponent<AudioSource>();
+
         if (rotationAxis.sqrMagnitude < 0.0001f)
-        {
             rotationAxis = Vector3.forward;
-        }
 
         closedRot = transform.localRotation;
         targetRot = closedRot;
@@ -52,19 +52,33 @@ public class Door : MonoBehaviour
 
     public void ToggleDoor(Transform interactor)
     {
+        // --- 1. CAS : PORTE VERROUILLÉE ---
         if (isLocked)
         {
-            return;
+            if (audioSource != null && lockedSound != null)
+            {
+                audioSource.PlayOneShot(lockedSound);
+            }
+            // On s'arrête ici : la porte ne s'ouvre pas
+            return; 
         }
 
+        // --- 2. CAS : FERMETURE ---
         if (isOpen)
         {
             isOpen = false;
             targetRot = closedRot;
             nextOpenDirection = -currentOpenDirection;
+
+            if (audioSource != null && closeSound != null)
+            {
+                audioSource.PlayOneShot(closeSound);
+            }
             return;
         }
 
+        // --- 3. CAS : OUVERTURE ---
+        isOpen = true; 
         float direction = nextOpenDirection;
         Transform lookSource = ResolveLookSource(interactor);
 
@@ -74,9 +88,7 @@ public class Door : MonoBehaviour
             Vector3 referenceOnPlane = Vector3.ProjectOnPlane(lookReferenceAxis, axisLocal);
 
             if (referenceOnPlane.sqrMagnitude < 0.0001f)
-            {
                 referenceOnPlane = Vector3.ProjectOnPlane(Vector3.right, axisLocal);
-            }
 
             if (referenceOnPlane.sqrMagnitude > 0.0001f)
             {
@@ -86,15 +98,11 @@ public class Door : MonoBehaviour
                 if (sourcePosOnPlane.sqrMagnitude > 0.0001f)
                 {
                     float side = Vector3.Dot(sourcePosOnPlane.normalized, referenceOnPlane.normalized);
-
                     if (!Mathf.Approximately(side, 0f))
                     {
                         float sideSign = side > 0f ? 1f : -1f;
-                        // On first open, use viewer side; afterward, keep alternating after each close.
                         if (!hasOpenedOnce)
-                        {
                             direction = openAwayFromViewer ? -sideSign : sideSign;
-                        }
                     }
                 }
             }
@@ -104,27 +112,14 @@ public class Door : MonoBehaviour
         targetRot = openRot;
         currentOpenDirection = direction;
         hasOpenedOnce = true;
-        isOpen = !isOpen;
     }
 
     private Transform ResolveLookSource(Transform interactor)
     {
-        if (interactor != null)
-        {
-            return interactor;
-        }
-
-        if (Camera.main != null)
-        {
-            return Camera.main.transform;
-        }
-
+        if (interactor != null) return interactor;
+        if (Camera.main != null) return Camera.main.transform;
         GameObject namedMainCamera = GameObject.Find(fallbackCameraObjectName);
-        if (namedMainCamera != null)
-        {
-            return namedMainCamera.transform;
-        }
-
+        if (namedMainCamera != null) return namedMainCamera.transform;
         return null;
     }
 }
