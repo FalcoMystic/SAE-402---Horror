@@ -29,13 +29,16 @@ public static class LeonardUltimeSetup
         leonard.name = LeonardObjectName;
         leonard.tag = "Player";
 
-        EnsureComponent<CharacterController>(leonard);
-        EnsureComponent<PlayerMovement>(leonard);
+        GameObject playerRoot = ResolvePlayerRoot(leonard);
+        RepairWrongMovementPlacement(leonard, playerRoot);
+
+        EnsureComponent<CharacterController>(playerRoot);
+        EnsureComponent<PlayerMovement>(playerRoot);
 
         CamcorderController camcorder = EnsureComponent<CamcorderController>(leonard);
         ModePOVCamera povCamera = EnsureComponent<ModePOVCamera>(leonard);
         PlayerInteraction interaction = EnsureComponent<PlayerInteraction>(leonard);
-        PlayerPickUp pickUp = EnsureComponent<PlayerPickUp>(leonard);
+        PlayerPickUp pickUp = EnsureComponent<PlayerPickUp>(playerRoot);
 
         interaction.enabled = true;
         pickUp.enabled = true;
@@ -80,10 +83,11 @@ public static class LeonardUltimeSetup
             povCamera.textureEcran = textureEcran;
         }
 
-        AssignMouseLookPlayerBody(leonard.transform);
+        AssignMouseLookPlayerBody(playerRoot.transform);
         RefreshRigReferences(leonard, camcorder);
-        SetupTorch(leonard.transform);
+        SetupTorch(playerRoot.transform);
 
+        EditorUtility.SetDirty(playerRoot);
         EditorUtility.SetDirty(leonard);
         EditorUtility.SetDirty(camcorder);
         EditorUtility.SetDirty(povCamera);
@@ -235,6 +239,59 @@ public static class LeonardUltimeSetup
         }
 
         EditorUtility.SetDirty(camcorder);
+    }
+
+    private static GameObject ResolvePlayerRoot(GameObject leonard)
+    {
+        SimpleMouseLook[] looks = Object.FindObjectsByType<SimpleMouseLook>(FindObjectsSortMode.None);
+        foreach (SimpleMouseLook look in looks)
+        {
+            if (look == null || !look.gameObject.scene.IsValid())
+            {
+                continue;
+            }
+
+            if (look.playerBody != null && look.playerBody.gameObject.scene.IsValid())
+            {
+                return look.playerBody.gameObject;
+            }
+        }
+
+        PlayerMovement[] movements = Object.FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
+        foreach (PlayerMovement movement in movements)
+        {
+            if (movement != null && movement.gameObject.scene.IsValid())
+            {
+                return movement.gameObject;
+            }
+        }
+
+        if (leonard.transform.parent != null && leonard.transform.parent.gameObject.scene.IsValid())
+        {
+            return leonard.transform.parent.gameObject;
+        }
+
+        return leonard;
+    }
+
+    private static void RepairWrongMovementPlacement(GameObject leonard, GameObject playerRoot)
+    {
+        if (leonard == null || playerRoot == null || leonard == playerRoot)
+        {
+            return;
+        }
+
+        CharacterController wrongController = leonard.GetComponent<CharacterController>();
+        if (wrongController != null)
+        {
+            Undo.DestroyObjectImmediate(wrongController);
+        }
+
+        PlayerMovement wrongMovement = leonard.GetComponent<PlayerMovement>();
+        if (wrongMovement != null)
+        {
+            Undo.DestroyObjectImmediate(wrongMovement);
+        }
     }
 
     private static void SetupTorch(Transform leonardTransform)
