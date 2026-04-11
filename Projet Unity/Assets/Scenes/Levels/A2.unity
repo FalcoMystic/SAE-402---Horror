@@ -5591,63 +5591,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1001 &1296806332
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1780568713473572629, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_Name
-      value: LE_JOUEUR
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 802.6805
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 49.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -867.85675
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
 --- !u!1 &1312303154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2366304432929067163, guid: 7e8fe2dc995805846973e5c953634d39, type: 3}
@@ -18989,8 +18932,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &3271157223061929704
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23073,8 +23019,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &4539139494377115990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26808,8 +26757,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &5638671640634183491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31257,8 +31209,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &7080017446808124488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31889,8 +31844,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &7232455524809039257
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32110,8 +32068,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &7264937021265779535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60749,8 +60710,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &7339698500188135874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61159,8 +61123,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &7440522621990921421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61661,8 +61628,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &7516462764847372246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61696,7 +61666,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -61705,10 +61675,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 1.5
+  MaxDistance: 12
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -61741,7 +61711,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -62331,8 +62301,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &7738860736075402620
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63228,8 +63201,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8014310836170894117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63841,8 +63817,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8166225387150605454
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64290,8 +64269,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8242310122745443827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64708,8 +64690,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8334643947515477455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65213,8 +65198,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8510614091904099038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65402,8 +65390,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8530968944144125376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65702,8 +65693,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8557999778232376841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66244,8 +66238,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8645749662915602599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66788,8 +66785,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8756561738311729629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67257,8 +67257,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8821368634203350439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67643,8 +67646,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8905790691340237867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67872,8 +67878,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &8966744524960558772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68261,8 +68270,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &9049083642275787924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68719,8 +68731,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &9104363257447580927
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69036,8 +69051,11 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 7516462764847372247}
+  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
   closeSound: {fileID: 8300000, guid: 6c6bbcf652dff6a4faf1ea84e2240afc, type: 3}
   lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
+  volume: 1
+  autoSetupAudio: 1
 --- !u!65 &9144699428746767826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69599,4 +69617,3 @@ SceneRoots:
   - {fileID: 420041309}
   - {fileID: 727368127}
   - {fileID: 4072729192677496498}
-  - {fileID: 1296806332}

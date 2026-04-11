@@ -8,6 +8,12 @@ public class SimpleMouseLook : MonoBehaviour
     public float sensitivity = 2f;
     public Transform playerBody;
 
+    [Header("Crosshair")]
+    public bool showCrosshair = true;
+    [Range(2f, 16f)]
+    public float crosshairSize = 6f;
+    public Color crosshairColor = Color.white;
+
     [Header("Puzzle UI")]
     public Canvas puzzleCanvas;
     public KeyCode puzzleToggleKey = KeyCode.R;
@@ -121,5 +127,22 @@ public class SimpleMouseLook : MonoBehaviour
         isMouseLocked = locked;
         Cursor.lockState = locked ? CursorLockMode.Locked : CursorLockMode.None;
         Cursor.visible = !locked;
+    }
+
+    void OnGUI()
+    {
+        if (!showCrosshair)
+        {
+            return;
+        }
+
+        Color previousColor = GUI.color;
+        GUI.color = crosshairColor;
+
+        float x = (Screen.width - crosshairSize) * 0.5f;
+        float y = (Screen.height - crosshairSize) * 0.5f;
+        GUI.DrawTexture(new Rect(x, y, crosshairSize, crosshairSize), Texture2D.whiteTexture);
+
+        GUI.color = previousColor;
     }
 }
