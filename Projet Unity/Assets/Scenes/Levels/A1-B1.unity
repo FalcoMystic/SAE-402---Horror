@@ -23,17 +23,10 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.06088102, g: 0.06518864, b: 0.07437822, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-<<<<<<< HEAD
-  m_AmbientIntensity: 7.27
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 3e6b61989fc2d214db2e4d3f9189323c, type: 2}
-=======
-  m_AmbientIntensity: 0.55
+  m_AmbientIntensity: 2.08
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: f0eea44a2591b9c47bf2670cf999a714, type: 2}
->>>>>>> nguyen
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -41,7 +34,7 @@ RenderSettings:
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
-  m_ReflectionBounces: 1
+  m_ReflectionBounces: 5
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
@@ -847,15 +840,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 44805615}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &44805613
@@ -1077,15 +1064,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 53127218}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &53127216
@@ -6563,15 +6544,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 414761563}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &414761561
@@ -6730,15 +6705,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 416000978}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &416000976
@@ -7355,10 +7324,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440781490}
   m_Mesh: {fileID: -603090170170222071, guid: 9f15aee079d33684f9ae5094ea05d49c, type: 3}
-<<<<<<< HEAD
---- !u!1 &444180298
-GameObject:
-=======
 --- !u!1 &440830956 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 463485722598849114, guid: 30a6b90d6a7f2234c904a52032e5c9a3, type: 3}
@@ -7366,64 +7331,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &440830960
 MeshCollider:
->>>>>>> nguyen
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 444180299}
-  - component: {fileID: 444180303}
-  - component: {fileID: 444180302}
-  - component: {fileID: 444180301}
-  - component: {fileID: 444180300}
-  m_Layer: 0
-  m_Name: Cube (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &444180299
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444180298}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 118.862, y: 1.592, z: -89.993}
-  m_LocalScale: {x: 1.7556269, y: 4.951898, z: 0.97348}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2055281248}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &444180300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444180298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89036c60ecb250e4c93a5bad0a2672a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneTrigger
-  nomDeLaSceneCible: B0
---- !u!65 &444180301
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444180298}
-=======
   m_GameObject: {fileID: 440830956}
->>>>>>> nguyen
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -7432,70 +7344,6 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-<<<<<<< HEAD
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &444180302
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444180298}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials: []
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &444180303
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444180298}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-=======
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
@@ -7579,7 +7427,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6101574120639420465, guid: 119ce84d4414b06429e9e83c6f7c6aec, type: 3}
   m_PrefabInstance: {fileID: 444097866}
   m_PrefabAsset: {fileID: 0}
->>>>>>> nguyen
 --- !u!1 &444771422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -971385144136675636, guid: 1aa37d57357db8b43ad30511c8996e71, type: 3}
@@ -7606,15 +7453,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 444771431}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &444771429
@@ -7805,15 +7646,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 452868648}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &452868647
@@ -7934,8 +7769,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< HEAD
-=======
 --- !u!1 &453439874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 662899436023785654, guid: 49b797febdb69b242aada0c6fa7e134e, type: 3}
@@ -8044,7 +7877,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8208709722410087803, guid: 37de991d25f207e408e97b852f1396aa, type: 3}
->>>>>>> nguyen
 --- !u!1 &472203470
 GameObject:
   m_ObjectHideFlags: 0
@@ -9183,131 +9015,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572287703}
   m_Mesh: {fileID: -7868604209620369320, guid: 9f15aee079d33684f9ae5094ea05d49c, type: 3}
---- !u!1 &572646771
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 572646772}
-  - component: {fileID: 572646776}
-  - component: {fileID: 572646775}
-  - component: {fileID: 572646774}
-  - component: {fileID: 572646773}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &572646772
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572646771}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 120.682, y: 1.592, z: -89.993}
-  m_LocalScale: {x: 1.4356428, y: 5.0868, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2055281248}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &572646773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572646771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89036c60ecb250e4c93a5bad0a2672a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneTrigger
-  nomDeLaSceneCible: A2
---- !u!65 &572646774
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572646771}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &572646775
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572646771}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials: []
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &572646776
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572646771}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &575530163 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551767617885050053, guid: ebf8234bb13d99d4cb232bbdf2107787, type: 3}
@@ -10336,15 +10043,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 661074708}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &661074706
@@ -10477,8 +10178,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< HEAD
-=======
 --- !u!1 &661478931 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1753787823715588579, guid: 30a6b90d6a7f2234c904a52032e5c9a3, type: 3}
@@ -10506,7 +10205,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8208709722410087803, guid: 37de991d25f207e408e97b852f1396aa, type: 3}
->>>>>>> nguyen
 --- !u!1001 &666417016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37887,15 +37585,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 789161109}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &789161107
@@ -38735,10 +38427,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1989089432}
   m_LocalEulerAnglesHint: {x: 35.56, y: 73.24, z: 0}
-<<<<<<< HEAD
---- !u!1 &832003835
-GameObject:
-=======
 --- !u!1 &832614984 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6171832940165264597, guid: 119ce84d4414b06429e9e83c6f7c6aec, type: 3}
@@ -38746,109 +38434,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &832614988
 MeshCollider:
->>>>>>> nguyen
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 832003836}
-  - component: {fileID: 832003839}
-  - component: {fileID: 832003838}
-  - component: {fileID: 832003837}
-  m_Layer: 5
-  m_Name: Canvas_Camcorder (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &832003836
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832003835}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 17.13355}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2095044692}
-  m_Father: {fileID: 1190958885}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 105.10481, y: -2.6043}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &832003837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832003835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &832003838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832003835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &832003839
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832003835}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
-=======
   m_GameObject: {fileID: 832614984}
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -38865,7 +38454,6 @@ Canvas:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8099496701234022359, guid: 69bfdb8410c57f9418bebacefc4c583a, type: 3}
->>>>>>> nguyen
 --- !u!1 &832625062 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6149789349813254037, guid: 1aa37d57357db8b43ad30511c8996e71, type: 3}
@@ -42518,15 +42106,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1037947849}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1037947847
@@ -42659,8 +42241,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< HEAD
-=======
 --- !u!1 &1039676358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1843739676859731389, guid: 426165fd93a0b854fa4eb39319cd0883, type: 3}
@@ -42688,7 +42268,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8208709722410087803, guid: 37de991d25f207e408e97b852f1396aa, type: 3}
->>>>>>> nguyen
 --- !u!1 &1048012521
 GameObject:
   m_ObjectHideFlags: 0
@@ -43320,15 +42899,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1081203019}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1081203017
@@ -43546,15 +43119,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1083766082}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1083766080
@@ -124905,15 +124472,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1109722579}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1109722577
@@ -125189,15 +124750,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1115091225}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1115091223
@@ -125330,8 +124885,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< HEAD
-=======
 --- !u!1 &1118842876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3803815162275338735, guid: 30a6b90d6a7f2234c904a52032e5c9a3, type: 3}
@@ -125359,7 +124912,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8099496701234022359, guid: 69bfdb8410c57f9418bebacefc4c583a, type: 3}
->>>>>>> nguyen
 --- !u!1 &1120302901
 GameObject:
   m_ObjectHideFlags: 0
@@ -125812,15 +125364,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1168231005}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1168231003
@@ -126096,15 +125642,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1174972420}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1174972418
@@ -126708,71 +126248,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1001 &1190958884
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1780568713473572629, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_Name
-      value: LE_JOUEUR
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -105.10481
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.6043
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.13355
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 832003836}
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
---- !u!4 &1190958885 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6142918372705610293, guid: 8fb7807348cc03541bb227068c43e1a9, type: 3}
-  m_PrefabInstance: {fileID: 1190958884}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1193450871
 GameObject:
   m_ObjectHideFlags: 0
@@ -127534,15 +127009,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1233239632}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1233239630
@@ -127675,8 +127144,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< HEAD
-=======
 --- !u!1 &1235928257 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8598152660544045936, guid: fc68ebea3c531994b917a8e4d61da4be, type: 3}
@@ -127704,7 +127171,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8099496701234022359, guid: 69bfdb8410c57f9418bebacefc4c583a, type: 3}
->>>>>>> nguyen
 --- !u!1 &1236290173
 GameObject:
   m_ObjectHideFlags: 0
@@ -128466,6 +127932,7 @@ MonoBehaviour:
   textureEcran: {fileID: 8400000, guid: 79e1653da2701714e833f83458275652, type: 2}
   uiCamera: {fileID: 376793782}
   flashUI: {fileID: 0}
+  distancePhoto: 10
 --- !u!114 &1281274569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128648,8 +128115,6 @@ MonoBehaviour:
   interactRange: 3
   playerCam: {fileID: 1622996897}
   texteInteraction: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!54 &1281274575
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128677,7 +128142,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
->>>>>>> nguyen
 --- !u!1 &1288971778
 GameObject:
   m_ObjectHideFlags: 0
@@ -130099,15 +129563,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1380364482}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1380364480
@@ -131955,15 +131413,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1466139477}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1466139475
@@ -132096,8 +131548,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< HEAD
-=======
 --- !u!1 &1470349316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4384825975678379427, guid: 426165fd93a0b854fa4eb39319cd0883, type: 3}
@@ -132152,7 +131602,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8099496701234022359, guid: 69bfdb8410c57f9418bebacefc4c583a, type: 3}
->>>>>>> nguyen
 --- !u!1 &1482297833
 GameObject:
   m_ObjectHideFlags: 0
@@ -133940,15 +133389,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1581896752}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1581896751
@@ -136327,15 +135770,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1743428149}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1743428147
@@ -137086,15 +136523,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1775121558}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1775121556
@@ -137227,8 +136658,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< HEAD
-=======
 --- !u!4 &1777732104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6101574120639420465, guid: 119ce84d4414b06429e9e83c6f7c6aec, type: 3}
@@ -137324,7 +136753,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8099496701234022359, guid: 69bfdb8410c57f9418bebacefc4c583a, type: 3}
->>>>>>> nguyen
 --- !u!1001 &1785026440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137499,15 +136927,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1807446836}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1807446834
@@ -138953,15 +138375,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 1882270969}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &1882270967
@@ -139094,8 +138510,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< HEAD
-=======
 --- !u!1 &1884322494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2992635963005027648, guid: 30a6b90d6a7f2234c904a52032e5c9a3, type: 3}
@@ -139123,7 +138537,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8099496701234022359, guid: 69bfdb8410c57f9418bebacefc4c583a, type: 3}
->>>>>>> nguyen
 --- !u!4 &1889701569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8435857360618463176, guid: 8f1d12c94febc59468f0b4473105a468, type: 3}
@@ -141313,15 +140726,9 @@ MonoBehaviour:
   openAwayFromViewer: 1
   speed: 3
   audioSource: {fileID: 2044601209}
-<<<<<<< HEAD
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-=======
   openSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   closeSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
   lockedSound: {fileID: 8300000, guid: 8f8ae79a150f9f0498f9e89c18540209, type: 3}
->>>>>>> nguyen
   volume: 1
   autoSetupAudio: 1
 --- !u!65 &2044601207
@@ -141454,8 +140861,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< HEAD
-=======
 --- !u!1 &2045755627 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2799634524118472620, guid: 49b797febdb69b242aada0c6fa7e134e, type: 3}
@@ -141510,7 +140915,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8099496701234022359, guid: 69bfdb8410c57f9418bebacefc4c583a, type: 3}
->>>>>>> nguyen
 --- !u!1001 &2046934051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142442,13 +141846,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 1688679645643881890, guid: 1aa37d57357db8b43ad30511c8996e71, type: 3}
     - {fileID: 7959918121349366429, guid: 1aa37d57357db8b43ad30511c8996e71, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1aa37d57357db8b43ad30511c8996e71, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 572646772}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1aa37d57357db8b43ad30511c8996e71, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 444180299}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -6207299206365488898, guid: 1aa37d57357db8b43ad30511c8996e71, type: 3}
       insertIndex: -1
@@ -142988,13 +142386,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 565771961}
   m_SourcePrefab: {fileID: 100100000, guid: 1aa37d57357db8b43ad30511c8996e71, type: 3}
-<<<<<<< HEAD
---- !u!4 &2055281248 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1aa37d57357db8b43ad30511c8996e71, type: 3}
-  m_PrefabInstance: {fileID: 2055281247}
-  m_PrefabAsset: {fileID: 0}
-=======
 --- !u!1 &2059576196 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2383982447197926766, guid: 30a6b90d6a7f2234c904a52032e5c9a3, type: 3}
@@ -143022,7 +142413,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8208709722410087803, guid: 37de991d25f207e408e97b852f1396aa, type: 3}
->>>>>>> nguyen
 --- !u!1 &2060168803
 GameObject:
   m_ObjectHideFlags: 0
@@ -143868,78 +143258,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092234606}
   m_Mesh: {fileID: -483201078997618907, guid: 9f15aee079d33684f9ae5094ea05d49c, type: 3}
---- !u!1 &2095044691
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2095044692}
-  - component: {fileID: 2095044694}
-  - component: {fileID: 2095044693}
-  m_Layer: 5
-  m_Name: RawImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2095044692
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095044691}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 832003836}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2095044693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095044691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 01946e7ba774a3c478a4daa7079e3d8e, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &2095044694
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095044691}
-  m_CullTransparentMesh: 1
 --- !u!1 &2096708979
 GameObject:
   m_ObjectHideFlags: 0
@@ -145649,11 +144967,5 @@ SceneRoots:
   - {fileID: 837448289}
   - {fileID: 1104571376}
   - {fileID: 124763199}
-<<<<<<< HEAD
-  - {fileID: 1276886118}
-  - {fileID: 1839613021}
-  - {fileID: 1190958884}
-=======
   - {fileID: 1839613021}
   - {fileID: 1835029879}
->>>>>>> nguyen
