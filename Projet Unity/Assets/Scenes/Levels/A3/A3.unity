@@ -67917,7 +67917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2013106576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67930,7 +67930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89036c60ecb250e4c93a5bad0a2672a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTrigger
-  nomDeLaSceneCible: B0
+  nomDeLaSceneCible: B0-2
 --- !u!65 &2013106577
 BoxCollider:
   m_ObjectHideFlags: 0
