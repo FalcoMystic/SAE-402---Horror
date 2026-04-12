@@ -4,18 +4,15 @@ using UnityEngine.Events;
 public class PhotoTarget : MonoBehaviour
 {
     [Header("Paramètres")]
-    [Tooltip("Le nom qui apparaîtra dans la console")]
-    public string objectName; 
+    public string objectName; // Nom pour le debug
     public bool canBePhotographedOnlyOnce = true;
-    
+
     [Header("Audio (Optionnel)")]
-    [Tooltip("Le composant AudioSource sur cet objet")]
     public AudioSource audioSource;
-    [Tooltip("Le clip audio à jouer lors de la photo")]
     public AudioClip soundEffect;
 
     [Header("Événement")]
-    public UnityEvent onPhotoTaken; 
+    public UnityEvent onPhotoTaken; // Ce qui se passe quand on prend la photo
 
     private bool hasBeenPhotographed = false;
 
@@ -25,8 +22,8 @@ public class PhotoTarget : MonoBehaviour
         if (canBePhotographedOnlyOnce && hasBeenPhotographed) return;
 
         // 2. Message console
-        Debug.Log("photo take : " + objectName);
-        
+        Debug.Log("Photo réussie sur : " + objectName);
+
         hasBeenPhotographed = true;
 
         // 3. Gestion du Son
