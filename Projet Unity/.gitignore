@@ -73,7 +73,7 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
-
+workspace.xml
 # Crashlytics generated file
 crashlytics-build.properties
 

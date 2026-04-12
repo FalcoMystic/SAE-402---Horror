@@ -78,5 +78,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 
-.idea
+.idea/
+**/workspace.xml
 # End of https://www.toptal.com/developers/gitignore/api/unity
