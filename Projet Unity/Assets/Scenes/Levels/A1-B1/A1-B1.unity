@@ -129582,7 +129582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleItem
   nomDeLobjet: Garde-lame Templier Noir
   messageInteraction: Appuyer sur E pour ramasser
-  messageTrouve: "Warhammer, Paul adore \xE7a..."
+  messageTrouve: "Warhammer, Sylvain adore \xE7a..."
   displayDuration: 3
   uiText: {fileID: 595245965}
   triggerPiece: {fileID: 1444328025}
