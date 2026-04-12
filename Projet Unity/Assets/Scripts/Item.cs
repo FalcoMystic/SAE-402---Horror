@@ -5,12 +5,12 @@ public class CollectibleItem : MonoBehaviour
 {
 
     void Start()
-{
-    if (uiText != null) // ← empêche le crash
-        uiText.gameObject.SetActive(false);
-    else
-        Debug.LogWarning("uiText non assigné sur : " + gameObject.name); // ← identifie le coupable
-}
+    {
+        if (uiText != null) // ← empêche le crash
+            uiText.gameObject.SetActive(false);
+        else
+            Debug.LogWarning("uiText non assigné sur : " + gameObject.name); // ← identifie le coupable
+    }
 
     [Header("Configuration")]
     public string nomDeLobjet = "Objet inconnu";
@@ -25,6 +25,9 @@ public class CollectibleItem : MonoBehaviour
     [Header("Trigger de la pièce")]
     public TriggerMessage triggerPiece; // relie le trigger de la pièce ici
 
+    [Header("Activation d'objets")]
+    public GameObject objetAActiver; // ← glisse le bloc SceneTrigger ici
+
     private bool dejaRamasse = false;
 
     // Appelé quand le joueur appuie sur E
@@ -32,6 +35,9 @@ public class CollectibleItem : MonoBehaviour
     {
         if (dejaRamasse) return;
         dejaRamasse = true;
+
+        if (objetAActiver != null)             // ← ajoute ces
+            objetAActiver.SetActive(true);     // ← deux lignes
 
         Debug.Log(nomDeLobjet + " a été ajouté à l'inventaire.");
 
