@@ -16,9 +16,9 @@ public class FlashController : MonoBehaviour
 
     void Start()
     {
+        // On force l'état initial
         if (rigFlashAim != null) rigFlashAim.weight = 0f;
         if (rigFlashIdle != null) rigFlashIdle.weight = 1f;
-
         if (flashLight != null) flashLight.enabled = false;
     }
 
@@ -27,16 +27,28 @@ public class FlashController : MonoBehaviour
         if (Input.GetKeyDown(aimKey))
         {
             isAiming = !isAiming;
-            if (flashLight != null) flashLight.enabled = isAiming;
+
+            // On active/désactive la lumière
+            if (flashLight != null)
+            {
+                flashLight.enabled = isAiming;
+                Debug.Log("État de la lampe : " + isAiming);
+            }
+            else
+            {
+                Debug.LogError("Attention : Aucune Light assignée dans l'inspecteur !");
+            }
         }
 
+        // Calcul des poids cibles
         float targetAimWeight = isAiming ? 1f : 0f;
         float targetIdleWeight = isAiming ? 0f : 1f;
 
-        if (rigFlashAim != null && rigFlashIdle != null)
-        {
+        // Transition fluide des poids des Rigs
+        if (rigFlashAim != null)
             rigFlashAim.weight = Mathf.Lerp(rigFlashAim.weight, targetAimWeight, Time.deltaTime * transitionSpeed);
+
+        if (rigFlashIdle != null)
             rigFlashIdle.weight = Mathf.Lerp(rigFlashIdle.weight, targetIdleWeight, Time.deltaTime * transitionSpeed);
-        }
     }
 }
