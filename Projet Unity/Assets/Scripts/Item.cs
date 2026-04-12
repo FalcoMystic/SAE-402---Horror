@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 using TMPro;
 
@@ -87,4 +88,4 @@ public class CollectibleItem : MonoBehaviour
         couleur.a = arrivee;
         uiText.color = couleur;
     }
-}
+}*/

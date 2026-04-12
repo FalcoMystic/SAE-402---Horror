@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c70fe3-e8c2-4e63-b5a2-94cc655581e8" name="Changes" comment="début flashlight sur leonard">
-      <change afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/DoubleDoor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/ItemSD.cs" afterDir="false" />
+    <list default="true" id="58c70fe3-e8c2-4e63-b5a2-94cc655581e8" name="Changes" comment="maj du main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Images/T.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Images/T.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Images/affiche.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Images/affiche.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/Player-scripts.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/Player-scripts.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0/LightingData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/DoubleDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/DoubleDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/ItemSD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/ItemSD.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/TextMesh Pro/Fonts/Creepster-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/TextMesh Pro/Fonts/Creepster-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775999443962</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="maj du main">
+      <option name="closed" value="true" />
+      <created>1776011229388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776011229388</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +155,7 @@
     <MESSAGE value="fix gitignore (mb)" />
     <MESSAGE value="git ignore pck workspace clc" />
     <MESSAGE value="début flashlight sur leonard" />
-    <option name="LAST_COMMIT_MESSAGE" value="début flashlight sur leonard" />
+    <MESSAGE value="maj du main" />
+    <option name="LAST_COMMIT_MESSAGE" value="maj du main" />
   </component>
 </project>
