@@ -15,17 +15,17 @@ public class ModePOVCamera : MonoBehaviour
 
     [Header("Rendu")]
     public RenderTexture textureEcran;
-    public GameObject uiCamera;
+    public GameObject uiCamera; // Ton Canvas (REC, batterie...)
 
     [Header("Effets")]
-    public GameObject flashUI;
+    public GameObject flashUI; // Panel blanc pour l'effet flash
 
-    [Header("Détection Photo")]
-    public float distanceDetection = 10f; 
-    public LayerMask layerCible; 
+    [Header("Paramètres de Détection")]
+    public float distancePhoto = 10f; // Portée du clic photo
+    public LayerMask layerCible = ~0;
 
     private bool enModePOV = false;
-    private bool cameraSortie = false; // la caméra est entre les mains du joueur ?
+    private bool cameraSortie = false;
 
     void Start()
     {
@@ -34,68 +34,51 @@ public class ModePOVCamera : MonoBehaviour
     }
 
     void Update()
+    {
+        // 1. Sortir ou Ranger la caméra
+        if (Input.GetKeyDown(toucheRangeCam))
         {
-            // 1. GESTION DE LA TOUCHE C (Sortir/Ranger l'objet caméra)
-            if (Input.GetKeyDown(toucheRangeCam))
-            {
-                if (enModePOV)
-                {
-                    // Si on range alors qu'on regardait dedans, on quitte le mode POV d'abord
-                    TogglePOV();
-                }
-
-                cameraSortie = !cameraSortie;
-                Debug.Log(cameraSortie ? "Caméra sortie" : "Caméra rangée");
-
-            }
-
-            // 2. GESTION DE LA TOUCHE V (Regarder dans la lentille)
-            // On ajoute la condition : il faut que cameraSortie soit TRUE
-            if (Input.GetKeyDown(touchePOV) && cameraSortie)
-            {
-                TogglePOV();
-            }
-
-            // 3. PHOTO (Seulement en POV)
-            if (enModePOV && Input.GetKeyDown(touchePhoto))
-            {
-                StartCoroutine(PrendrePhotoPropre());
-            }
+            if (enModePOV) TogglePOV();
+            cameraSortie = !cameraSortie;
         }
+
+        // 2. Regarder dans la lentille
+        if (Input.GetKeyDown(touchePOV) && cameraSortie)
+        {
+            TogglePOV();
+        }
+
+        // 3. Prendre la photo
+        if (enModePOV && Input.GetKeyDown(touchePhoto))
+        {
+            StartCoroutine(PrendrePhotoPropre());
+        }
+    }
 
     IEnumerator PrendrePhotoPropre()
     {
-        // --- LOGIQUE DE DETECTION AVEC DEBUG ---
+        // --- DETECTION DE L'OBJET (RAYCAST) ---
+        // On tire un rayon depuis le centre de la vue (0.5, 0.5)
         Ray ray = camLentille.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, distanceDetection, layerCible))
+        if (Physics.Raycast(ray, out hit, distancePhoto, layerCible))
         {
-            PhotoTarget target = hit.collider.GetComponent<PhotoTarget>();
-            if (target != null)
+            PhotoTarget cible = hit.collider.GetComponent<PhotoTarget>();
+
+            if (cible != null)
             {
-                // MESSAGE DE SUCCÈS
-                Debug.Log("<color=green>SUCCÈS :</color> Photo prise de " + hit.collider.gameObject.name);
-                target.TriggerPhotoEffect();
+                cible.TriggerPhotoEffect();
             }
-            else
-            {
-                // MESSAGE D'OBJET SANS SCRIPT
-                Debug.Log("<color=yellow>INFO :</color> Tu as photographié '" + hit.collider.gameObject.name + "' mais il n'a pas de script PhotoTarget.");
-            }
-        }
-        else
-        {
-            // MESSAGE DE VIDE
-            Debug.Log("<color=red>ECHEC :</color> Tu as pris une photo du vide.");
         }
 
-        // --- RESTE DU CODE (Flash et Capture) ---
+        // --- EFFETS VISUELS ET CAPTURE ---
         if (uiCamera != null) uiCamera.SetActive(false);
         if (flashUI != null) flashUI.SetActive(true);
 
         yield return new WaitForEndOfFrame();
 
+        // Enregistrement du fichier PNG
         string nomFichier = "Photo_" + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png";
         string cheminComplet = Path.Combine(Application.persistentDataPath, nomFichier);
         ScreenCapture.CaptureScreenshot(cheminComplet);
