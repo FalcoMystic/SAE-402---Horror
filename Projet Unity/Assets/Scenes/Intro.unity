@@ -530,7 +530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: c6909648c6f5a474fad749423eb67f1a, type: 3}
+  m_Texture: {fileID: 2800000, guid: abfb63c534ffdbd4f8cb36a8801fa3c5, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -579,7 +579,7 @@ MonoBehaviour:
   delaiAvantTexte: 2
   delaiApresTexte: 4
   vitesseEcriture: 0.05
-  nomDeLaSceneDeJeu: A2
+  nomDeLaSceneDeJeu: B0
 --- !u!4 &512673245
 Transform:
   m_ObjectHideFlags: 0
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8862745}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
