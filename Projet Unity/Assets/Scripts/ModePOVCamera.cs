@@ -5,7 +5,7 @@ using System.Collections;
 public class ModePOVCamera : MonoBehaviour
 {
     [Header("Touches")]
-    public KeyCode touchePOV = KeyCode.V; 
+    public KeyCode touchePOV = KeyCode.V;
     public KeyCode toucheRangeCam = KeyCode.C;
     public KeyCode touchePhoto = KeyCode.Mouse0;
 
@@ -22,6 +22,10 @@ public class ModePOVCamera : MonoBehaviour
 
     [Header("Paramètres de Détection")]
     public float distancePhoto = 10f; // Portée du clic photo
+
+    [Header("Son Photo")]
+    public AudioSource photoSource;
+    public AudioClip photoClip;
 
     private bool enModePOV = false;
     private bool cameraSortie = false;
@@ -56,6 +60,10 @@ public class ModePOVCamera : MonoBehaviour
 
     IEnumerator PrendrePhotoPropre()
     {
+
+        if (photoSource != null && photoClip != null)
+            photoSource.PlayOneShot(photoClip);
+
         // --- DETECTION DE L'OBJET (RAYCAST) ---
         // On tire un rayon depuis le centre de la vue (0.5, 0.5)
         Ray ray = camLentille.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
