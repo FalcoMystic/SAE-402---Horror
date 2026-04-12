@@ -10,8 +10,8 @@ public class ModePOVCamera : MonoBehaviour
     public KeyCode touchePhoto = KeyCode.Mouse0;
 
     [Header("Caméras")]
-    public Camera yeuxJoueur;  // Ta Main Camera
-    public Camera camLentille; // La caméra enfant du modèle 3D
+    public Camera yeuxJoueur;
+    public Camera camLentille;
 
     [Header("Rendu")]
     public RenderTexture textureEcran;
@@ -22,6 +22,7 @@ public class ModePOVCamera : MonoBehaviour
 
     [Header("Paramètres de Détection")]
     public float distancePhoto = 10f; // Portée du clic photo
+    public LayerMask layerCible = ~0;
 
     [Header("Son Photo")]
     public AudioSource photoSource;
@@ -69,13 +70,12 @@ public class ModePOVCamera : MonoBehaviour
         Ray ray = camLentille.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, distancePhoto))
+        if (Physics.Raycast(ray, out hit, distancePhoto, layerCible))
         {
             PhotoTarget cible = hit.collider.GetComponent<PhotoTarget>();
 
             if (cible != null)
             {
-                // Appelle la fonction qui fera le Debug.Log("photo take : " + name)
                 cible.TriggerPhotoEffect();
             }
         }
@@ -95,14 +95,11 @@ public class ModePOVCamera : MonoBehaviour
 
         if (uiCamera != null) uiCamera.SetActive(true);
         if (flashUI != null) flashUI.SetActive(false);
-
-        // Note : J'ai retiré le Debug.Log ici pour que tu ne vois que celui de l'objet
     }
 
     void TogglePOV()
     {
         enModePOV = !enModePOV;
-
         if (enModePOV)
         {
             yeuxJoueur.enabled = false;
