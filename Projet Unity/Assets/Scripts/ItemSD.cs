@@ -1,7 +1,9 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
+using System.Collections;
 
-public class CollectibleItem : MonoBehaviour
+public partial class CollectibleItem : MonoBehaviour
 {
 
     void Start()
@@ -18,19 +20,30 @@ public class CollectibleItem : MonoBehaviour
     public string messageTrouve = "L'objet a été trouvé !";
     public float displayDuration = 3f;
 
+    [Header("Action Spéciale (ex: Déverrouiller Porte)")]
+    public UnityEvent onPickUpAction;
 
     [Header("UI")]
     public TextMeshProUGUI uiText;
 
     [Header("Trigger de la pièce")]
-    public TriggerMessage triggerPiece; // relie le trigger de la pièce ici
+    public TriggerMessage triggerPiece;
 
     [Header("Activation d'objets")]
     public GameObject objetAActiver; // ← glisse le bloc SceneTrigger ici
 
     private bool dejaRamasse = false;
 
-    // Appelé quand le joueur appuie sur E
+    void Start()
+    {
+        if (uiText != null)
+        {
+            uiText.gameObject.SetActive(false);
+
+        }
+    }
+
+    // --- CETTE FONCTION EST APPELÉE PAR LE SCRIPT DE LA CAMÉRA ---
     public void Ramasser()
     {
         if (dejaRamasse) return;
@@ -41,20 +54,26 @@ public class CollectibleItem : MonoBehaviour
 
         Debug.Log(nomDeLobjet + " a été ajouté à l'inventaire.");
 
-        // Prévient le trigger de la pièce que l'objet est trouvé
+        if (onPickUpAction != null)
+            onPickUpAction.Invoke();
+
         if (triggerPiece != null)
             triggerPiece.ObjetTrouve(messageTrouve, displayDuration);
 
-        GameManager.Instance.ObjetRamasse();
+        if (GameManager.Instance != null)
+            GameManager.Instance.ObjetRamasse();
 
-        // futur script d'inventaire
+        // On cache le texte avant de détruire l'objet
+        if (uiText != null) uiText.gameObject.SetActive(false);
 
         Destroy(gameObject);
     }
 
-    // Affiche le message d'interaction quand le joueur est proche
+    // --- GESTION DE L'AFFICHAGE DU TEXTE ---
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Quelque chose est entré dans la zone : " + other.name);
+        // Vérifie si c'est bien le joueur et si l'UI est assignée
         if (other.CompareTag("Player") && uiText != null)
         {
             uiText.text = messageInteraction;
@@ -73,13 +92,13 @@ public class CollectibleItem : MonoBehaviour
         }
     }
 
-    private System.Collections.IEnumerator FadeEtCacher()
+    private IEnumerator FadeEtCacher()
     {
         yield return StartCoroutine(Fade(1f, 0f, 0.3f));
         uiText.gameObject.SetActive(false);
     }
 
-    private System.Collections.IEnumerator Fade(float depart, float arrivee, float duree)
+    private IEnumerator Fade(float depart, float arrivee, float duree)
     {
         float elapsed = 0f;
         Color couleur = uiText.color;
