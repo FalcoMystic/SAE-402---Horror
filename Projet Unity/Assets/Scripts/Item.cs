@@ -3,17 +3,8 @@ using TMPro;
 using UnityEngine.Events;
 using System.Collections;
 
-public partial class CollectibleItem : MonoBehaviour
+public class CollectibleItem : MonoBehaviour
 {
-
-    void Start()
-    {
-        if (uiText != null) // ← empêche le crash
-            uiText.gameObject.SetActive(false);
-        else
-            Debug.LogWarning("uiText non assigné sur : " + gameObject.name); // ← identifie le coupable
-    }
-
     [Header("Configuration")]
     public string nomDeLobjet = "Objet inconnu";
     public string messageInteraction = "Appuyer sur E pour ramasser";
@@ -36,10 +27,20 @@ public partial class CollectibleItem : MonoBehaviour
 
     void Start()
     {
+        // Fusion des deux Start() pour éviter l'erreur CS0111
         if (uiText != null)
         {
             uiText.gameObject.SetActive(false);
 
+            // On s'assure que le texte est transparent au début pour le Fade
+            Color couleur = uiText.color;
+            couleur.a = 0f;
+            uiText.color = couleur;
+        }
+        else
+        {
+            // Message d'alerte pratique pour le débuggage en SAE
+            Debug.LogWarning("uiText non assigné sur : " + gameObject.name);
         }
     }
 
@@ -49,31 +50,34 @@ public partial class CollectibleItem : MonoBehaviour
         if (dejaRamasse) return;
         dejaRamasse = true;
 
-        if (objetAActiver != null)             // ← ajoute ces
-            objetAActiver.SetActive(true);     // ← deux lignes
+        // Activation de l'objet lié (ex: déclencheur de scène)
+        if (objetAActiver != null)
+            objetAActiver.SetActive(true);
 
         Debug.Log(nomDeLobjet + " a été ajouté à l'inventaire.");
 
+        // Déclenche l'événement Unity (ouverture de porte, etc.)
         if (onPickUpAction != null)
             onPickUpAction.Invoke();
 
+        // Envoie le message au trigger de la pièce
         if (triggerPiece != null)
             triggerPiece.ObjetTrouve(messageTrouve, displayDuration);
 
+        // Notifie le GameManager
         if (GameManager.Instance != null)
             GameManager.Instance.ObjetRamasse();
 
-        // On cache le texte avant de détruire l'objet
+        // On cache le texte proprement avant de détruire l'objet
         if (uiText != null) uiText.gameObject.SetActive(false);
 
         Destroy(gameObject);
     }
 
-    // --- GESTION DE L'AFFICHAGE DU TEXTE ---
+    // --- GESTION DE L'AFFICHAGE DU TEXTE (Trigger Zone) ---
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Quelque chose est entré dans la zone : " + other.name);
-        // Vérifie si c'est bien le joueur et si l'UI est assignée
+        // Vérifie si c'est bien le joueur qui entre dans la zone
         if (other.CompareTag("Player") && uiText != null)
         {
             uiText.text = messageInteraction;
