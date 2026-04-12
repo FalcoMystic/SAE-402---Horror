@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: cc3573bd8de325e499314a9184ebb365, type: 2}
+  m_LightingDataAsset: {fileID: 112000008, guid: cc3573bd8de325e499314a9184ebb365, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -525,20 +525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 44805615}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &44805615
 AudioSource:
   m_ObjectHideFlags: 0
@@ -780,20 +766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 53127218}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &53127218
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7809,20 +7781,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 414761563}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &414761563
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7984,20 +7942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 416000978}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &416000978
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8429,20 +8373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 444771431}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &444771431
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14480,20 +14410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 661074708}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &661074708
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41782,20 +41698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 789161109}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &789161109
 AudioSource:
   m_ObjectHideFlags: 0
@@ -46883,20 +46785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1037947849}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1037947849
 AudioSource:
   m_ObjectHideFlags: 0
@@ -47484,20 +47372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1081203019}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1081203019
 AudioSource:
   m_ObjectHideFlags: 0
@@ -47718,20 +47592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1083766082}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1083766082
 AudioSource:
   m_ObjectHideFlags: 0
@@ -123587,20 +123447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1109722579}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1109722579
 AudioSource:
   m_ObjectHideFlags: 0
@@ -123967,20 +123813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1115091225}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1115091225
 AudioSource:
   m_ObjectHideFlags: 0
@@ -124764,20 +124596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1168231005}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1168231005
 AudioSource:
   m_ObjectHideFlags: 0
@@ -124966,20 +124784,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1174972420}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1174972420
 AudioSource:
   m_ObjectHideFlags: 0
@@ -126227,20 +126031,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1233239632}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1233239632
 AudioSource:
   m_ObjectHideFlags: 0
@@ -129158,20 +128948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1380364482}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1380364482
 AudioSource:
   m_ObjectHideFlags: 0
@@ -131986,20 +131762,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1466139477}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1466139477
 AudioSource:
   m_ObjectHideFlags: 0
@@ -136673,20 +136435,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1743428149}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1743428149
 AudioSource:
   m_ObjectHideFlags: 0
@@ -137375,20 +137123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1775121558}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1775121558
 AudioSource:
   m_ObjectHideFlags: 0
@@ -137761,20 +137495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1807446836}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1807446836
 AudioSource:
   m_ObjectHideFlags: 0
@@ -138622,20 +138342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 1882270969}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &1882270969
 AudioSource:
   m_ObjectHideFlags: 0
@@ -140829,20 +140535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f191af73ef433b49869e5f5bc0289e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 0
-  openAngle: 90
-  rotationAxis: {x: 0, y: 0, z: 1}
-  fallbackCameraObjectName: main_camera
-  lookReferenceAxis: {x: 1, y: 0, z: 0}
-  openAwayFromViewer: 1
-  speed: 3
-  audioSource: {fileID: 2044601209}
-  openSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  closeSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  lockedSound: {fileID: 8300000, guid: ddfd603a8d12e604094d5f7fa4c8b8c8, type: 3}
-  volume: 1
-  autoSetupAudio: 1
 --- !u!82 &2044601209
 AudioSource:
   m_ObjectHideFlags: 0
