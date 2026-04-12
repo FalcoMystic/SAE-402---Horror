@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58c70fe3-e8c2-4e63-b5a2-94cc655581e8" name="Changes" comment="début flashlight sur leonard">
+      <change afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/DoubleDoor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scripts/ItemSD.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Images/T.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Images/T.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/B0/B0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/Player-scripts.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Projet Unity/Assets/Scenes/Levels/Player-scripts.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#7 on hamilcaro",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/hamil/Documents/IUT Haguenau/SAE 402/Horror/Projet Unity/Assets/Scripts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "0d570cb2-96df-43cc-80da-7f777e6d0afe",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#7 on hamilcaro&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hamil/Documents/IUT Haguenau/SAE 402/Horror/Projet Unity/Assets/Scripts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;0d570cb2-96df-43cc-80da-7f777e6d0afe&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hamil\Documents\IUT Haguenau\SAE 402\Horror\Projet Unity\Assets\Scripts" />
