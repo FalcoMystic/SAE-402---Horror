@@ -12677,10 +12677,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 237223781}
   - {fileID: 1479739106}
-<<<<<<< HEAD
   - {fileID: 739853867}
-=======
->>>>>>> nguyen
   - {fileID: 1804308390}
   - {fileID: 1218748637}
   - {fileID: 113495560}
