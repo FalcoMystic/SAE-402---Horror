@@ -30,7 +30,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
     "com.unity.cinemachine": {
       "version": "3.1.6",
       "depth": 0,
@@ -38,7 +37,9 @@
       "dependencies": {
         "com.unity.splines": "2.0.0",
         "com.unity.modules.imgui": "1.0.0"
-=======
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.cloud.gltfast": {
       "version": "6.18.0",
       "depth": 0,
@@ -56,10 +57,7 @@
       "version": "2.11.2",
       "depth": 0,
       "source": "registry",
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.cloud.gltfast": {
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
@@ -86,8 +84,7 @@
       "depth": 1,
       "source": "builtin",
       "dependencies": {}
-    },
-    "com.unity.feature.development": {
+    },    "com.unity.feature.development": {
       "version": "1.0.2",
       "depth": 0,
       "source": "builtin",
