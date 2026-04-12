@@ -5,16 +5,19 @@ public class CollectibleItem : MonoBehaviour
 {
 
     void Start()
-    {
+{
+    if (uiText != null) // ← empêche le crash
         uiText.gameObject.SetActive(false);
-    }
+    else
+        Debug.LogWarning("uiText non assigné sur : " + gameObject.name); // ← identifie le coupable
+}
 
     [Header("Configuration")]
     public string nomDeLobjet = "Objet inconnu";
     public string messageInteraction = "Appuyer sur E pour ramasser";
     public string messageTrouve = "L'objet a été trouvé !";
     public float displayDuration = 3f;
-    
+
 
     [Header("UI")]
     public TextMeshProUGUI uiText;
@@ -35,6 +38,8 @@ public class CollectibleItem : MonoBehaviour
         // Prévient le trigger de la pièce que l'objet est trouvé
         if (triggerPiece != null)
             triggerPiece.ObjetTrouve(messageTrouve, displayDuration);
+
+        GameManager.Instance.ObjetRamasse();
 
         // futur script d'inventaire
 
