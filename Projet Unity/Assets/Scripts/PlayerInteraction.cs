@@ -40,6 +40,7 @@ public class PlayerInteraction : MonoBehaviour
 
             // Vérification Item
             CollectibleItem item = hit.collider.GetComponent<CollectibleItem>();
+
             if (item != null)
             {
                 item.Ramasser();
