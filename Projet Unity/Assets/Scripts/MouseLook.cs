@@ -13,7 +13,6 @@ public class SimpleMouseLook : MonoBehaviour
     [Range(2f, 16f)]
     public float crosshairSize = 6f;
     public Color crosshairColor = Color.white;
-
     [Header("Puzzle UI")]
     public Canvas puzzleCanvas;
     public KeyCode puzzleToggleKey = KeyCode.R;
