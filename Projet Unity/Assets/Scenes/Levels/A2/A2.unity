@@ -2349,10 +2349,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 64670370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb2828ffc512eb4aa3409a30352b652, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c874850e1633f8448f4a008aa051542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhotoTarget
-  objectName: 
+  objectName: vase
   canBePhotographedOnlyOnce: 1
   audioSource: {fileID: 1218327867}
   soundEffect: {fileID: 8300000, guid: 134a89eef7f5df94fac38a4fd3c5c8ed, type: 3}
@@ -20307,12 +20307,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 841676222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb2828ffc512eb4aa3409a30352b652, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c874850e1633f8448f4a008aa051542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhotoTarget
-  objectName: 
+  objectName: yeux
   canBePhotographedOnlyOnce: 1
-  audioSource: {fileID: 456500055}
+  audioSource: {fileID: 1218327867}
   soundEffect: {fileID: 8300000, guid: dff541afa32a434488d6159af88db03c, type: 3}
   onPhotoTaken:
     m_PersistentCalls:
@@ -108927,7 +108927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   isOpen: 0
-  isLocked: 0
+  isLocked: 1
   openAngle: 90
   rotationAxis: {x: 0, y: 0, z: 1}
   fallbackCameraObjectName: main_camera
@@ -111846,7 +111846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   isOpen: 0
-  isLocked: 0
+  isLocked: 1
   openAngle: 90
   rotationAxis: {x: 0, y: 0, z: 1}
   fallbackCameraObjectName: main_camera

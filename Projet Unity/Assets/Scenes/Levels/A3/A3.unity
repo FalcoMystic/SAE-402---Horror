@@ -9040,16 +9040,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1394521465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbaaab6243017f341b9dd72f140c1a24, type: 3}
+  m_Script: {fileID: 11500000, guid: cf176e811b4a4ae4bb87e6355f66112c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleItem
-  nomDeLobjet: "Cl\xE9 USB"
+  nomDeLobjet: Objet inconnu
   messageInteraction: Appuyer sur E pour ramasser
-  messageTrouve: La preuve finale...
+  messageTrouve: "L'objet a \xE9t\xE9 trouv\xE9 !"
   displayDuration: 3
+  onPickUpAction:
+    m_PersistentCalls:
+      m_Calls: []
   uiText: {fileID: 0}
   triggerPiece: {fileID: 0}
-  objetAActiver: {fileID: 2013106575}
+  objetAActiver: {fileID: 0}
 --- !u!65 &1394521468
 BoxCollider:
   m_ObjectHideFlags: 0

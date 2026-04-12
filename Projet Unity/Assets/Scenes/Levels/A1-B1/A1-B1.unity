@@ -46468,15 +46468,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1026118787}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbaaab6243017f341b9dd72f140c1a24, type: 3}
+  m_Script: {fileID: 11500000, guid: cf176e811b4a4ae4bb87e6355f66112c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleItem
-  nomDeLobjet: Skateboard
+  nomDeLobjet: Objet inconnu
   messageInteraction: Appuyer sur E pour ramasser
-  messageTrouve: "Il est trop bien plac\xE9, il a disparu ici ?"
+  messageTrouve: "L'objet a \xE9t\xE9 trouv\xE9 !"
   displayDuration: 3
-  uiText: {fileID: 595245965}
-  triggerPiece: {fileID: 1266200849}
+  onPickUpAction:
+    m_PersistentCalls:
+      m_Calls: []
+  uiText: {fileID: 0}
+  triggerPiece: {fileID: 0}
+  objetAActiver: {fileID: 0}
 --- !u!64 &1026118789
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -124217,15 +124221,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1161019880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbaaab6243017f341b9dd72f140c1a24, type: 3}
+  m_Script: {fileID: 11500000, guid: cf176e811b4a4ae4bb87e6355f66112c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleItem
-  nomDeLobjet: Garde-lame Templier Noir
+  nomDeLobjet: Objet inconnu
   messageInteraction: Appuyer sur E pour ramasser
-  messageTrouve: "Warhammer, Sylvain adore \xE7a..."
+  messageTrouve: "L'objet a \xE9t\xE9 trouv\xE9 !"
   displayDuration: 3
-  uiText: {fileID: 595245965}
-  triggerPiece: {fileID: 1444328025}
+  onPickUpAction:
+    m_PersistentCalls:
+      m_Calls: []
+  uiText: {fileID: 0}
+  triggerPiece: {fileID: 0}
+  objetAActiver: {fileID: 0}
 --- !u!23 &1161019882
 MeshRenderer:
   m_ObjectHideFlags: 0

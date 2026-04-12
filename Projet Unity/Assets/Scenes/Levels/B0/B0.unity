@@ -1809,7 +1809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 1
+  isOpen: 0
   isLocked: 0
   openAngle: 90
   rotationAxis: {x: 0, y: 0, z: 1}
@@ -4963,7 +4963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   isOpen: 0
-  isLocked: 0
+  isLocked: 1
   openAngle: 90
   rotationAxis: {x: 0, y: 0, z: 1}
   fallbackCameraObjectName: main_camera
@@ -41428,7 +41428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 1
+  isOpen: 0
   isLocked: 0
   openAngle: 90
   rotationAxis: {x: 0, y: 0, z: 1}
