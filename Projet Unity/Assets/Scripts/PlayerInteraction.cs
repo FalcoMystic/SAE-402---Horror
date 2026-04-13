@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public float interactRange = 3f; 
+    public float interactRange = 3f;
     public Camera playerCam;
     public GameObject texteInteraction; // Glisse ton texte TMP ici
 
     void Update()
     {
+        Debug.Log("Update tourne"); // ← toute première ligne
+
         // 1. DÉTECTION CONTINUE (pour afficher le message "Appuyer sur E")
         Ray ray = playerCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
@@ -16,11 +18,22 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, interactRange))
         {
+
+            Debug.Log("Raycast touche : " + hit.collider.name); // ← ajoute ça
             // On vérifie si c'est une porte OU un item
-            if (hit.collider.GetComponent<Door>() != null || hit.collider.GetComponent<CollectibleItem>() != null)
+            if (hit.collider.GetComponentInParent<Door>() != null || hit.collider.GetComponentInParent<CollectibleItem>() != null)
             {
                 aTrouveInteraction = true;
+                Debug.Log("Interaction trouvée !"); // ← et ça
             }
+            else
+            {
+                Debug.Log("Pas de Door/Item sur : " + hit.collider.name); // ← et ça
+            }
+        }
+        else
+        {
+            Debug.Log("Raycast ne touche rien (range: " + interactRange + ")"); // ← et ça
         }
 
         // Affiche ou cache le texte "Appuyer sur E"
@@ -39,7 +52,7 @@ public class PlayerInteraction : MonoBehaviour
             }
 
             // Vérification Item
-            CollectibleItem item = hit.collider.GetComponent<CollectibleItem>();
+            CollectibleItem item = hit.collider.GetComponentInParent<CollectibleItem>();
 
             if (item != null)
             {
@@ -48,4 +61,5 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
     }
+
 }
