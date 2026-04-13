@@ -1792,6 +1792,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678861545}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &192824059 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7855010697732571114, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+  m_PrefabInstance: {fileID: 1617117802}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &193725236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8778141394179961124, guid: 2c92776cab6794d4cba6d935200cf323, type: 3}
@@ -4962,8 +4967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 1
+  isOpen: 1
+  isLocked: 0
   openAngle: 90
   rotationAxis: {x: 0, y: 0, z: 1}
   fallbackCameraObjectName: main_camera
@@ -7457,7 +7462,7 @@ Transform:
   m_GameObject: {fileID: 711804084}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1230.218, y: -536.78925, z: 2.482327}
+  m_LocalPosition: {x: -1258.885, y: -536.78925, z: 2.482327}
   m_LocalScale: {x: 0.3809524, y: 0.38095242, z: 1.904762}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7483,7 +7488,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.5, y: 1.5, z: 0.2}
-  m_Center: {x: 0, y: 0.0000023841858, z: -0.00000011920929}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &711804088
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27030,8 +27035,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ebf33dd14bcd724590c49ca5a0a4d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  isOpen: 0
-  isLocked: 1
+  isOpen: 1
+  isLocked: 0
   openAngle: 90
   rotationAxis: {x: 0, y: 0, z: 1}
   fallbackCameraObjectName: main_camera
@@ -27162,6 +27167,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &789276327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4443423625446452535, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+  m_PrefabInstance: {fileID: 1617117802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &789276332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789276327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0fd7775af6bb64097fd0cc93c3e367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSounds
+  respirationSource: {fileID: 192824059}
+  respirationClip: {fileID: 8300000, guid: 5d66ad810acb4834d88472758e1c000b, type: 3}
+  pasSource: {fileID: 948798736}
+  bruitsDePas: {fileID: 8300000, guid: c0b5f4ca9974bf5468a0bb18d6332066, type: 3}
 --- !u!1001 &793966560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28661,6 +28687,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9959897a65c0c0246b47d1c64706f015, type: 3}
   m_PrefabInstance: {fileID: 947533257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &948798736 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1104782027895659547, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+  m_PrefabInstance: {fileID: 1617117802}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &950536683
 PrefabInstance:
@@ -37674,6 +37705,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1104782027895659547, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+      propertyPath: BypassReverbZones
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1421185987952669001, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -99.11581
@@ -37722,10 +37757,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LE_JOUEUR
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 588877425370138776, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4443423625446452535, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 789276332}
   m_SourcePrefab: {fileID: 100100000, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
 --- !u!1 &1619475118
 GameObject:
