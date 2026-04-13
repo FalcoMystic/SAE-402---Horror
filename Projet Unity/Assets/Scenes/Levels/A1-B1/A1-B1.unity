@@ -46471,15 +46471,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf176e811b4a4ae4bb87e6355f66112c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleItem
-  nomDeLobjet: Objet inconnu
+  nomDeLobjet: Skateboard
   messageInteraction: Appuyer sur E pour ramasser
-  messageTrouve: "L'objet a \xE9t\xE9 trouv\xE9 !"
+  messageTrouve: "Il est trop bien plac\xE9, il a disparu ici ?"
   displayDuration: 3
   onPickUpAction:
     m_PersistentCalls:
       m_Calls: []
-  uiText: {fileID: 0}
-  triggerPiece: {fileID: 0}
+  uiText: {fileID: 595245965}
+  triggerPiece: {fileID: 1266200849}
   objetAActiver: {fileID: 0}
 --- !u!64 &1026118789
 MeshCollider:
@@ -124201,12 +124201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbaaab6243017f341b9dd72f140c1a24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleItem
-  nomDeLobjet: Garde-lame Templier Noir
-  messageInteraction: Appuyer sur E pour ramasser
-  messageTrouve: "L'objet a \xE9t\xE9 trouv\xE9 !"
-  displayDuration: 3
-  uiText: {fileID: 0}
-  triggerPiece: {fileID: 0}
 --- !u!1 &1161019880 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6689036041284674117, guid: 1d3472b3e0050cd4cb7eb6eff9f39146, type: 3}
@@ -124224,15 +124218,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf176e811b4a4ae4bb87e6355f66112c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleItem
-  nomDeLobjet: Objet inconnu
+  nomDeLobjet: Figurine
   messageInteraction: Appuyer sur E pour ramasser
-  messageTrouve: "L'objet a \xE9t\xE9 trouv\xE9 !"
+  messageTrouve: "Warhammer, Sylvain adore \xE7a..."
   displayDuration: 3
   onPickUpAction:
     m_PersistentCalls:
       m_Calls: []
-  uiText: {fileID: 0}
-  triggerPiece: {fileID: 0}
+  uiText: {fileID: 595245965}
+  triggerPiece: {fileID: 1444328025}
   objetAActiver: {fileID: 0}
 --- !u!23 &1161019882
 MeshRenderer:
@@ -139784,11 +139778,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: LE_JOUEUR
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 588877425370138776, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4443423625446452535, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1981185174}
   m_SourcePrefab: {fileID: 100100000, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+--- !u!1 &1981185171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4443423625446452535, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+  m_PrefabInstance: {fileID: 1981185170}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1981185172 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1104782027895659547, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+  m_PrefabInstance: {fileID: 1981185170}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1981185173 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7855010697732571114, guid: bcc973767ac5c324088c405ae5bdbdb8, type: 3}
+  m_PrefabInstance: {fileID: 1981185170}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1981185174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981185171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0fd7775af6bb64097fd0cc93c3e367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSounds
+  respirationSource: {fileID: 1981185173}
+  respirationClip: {fileID: 8300000, guid: 5d66ad810acb4834d88472758e1c000b, type: 3}
+  pasSource: {fileID: 1981185172}
+  bruitsDePas: {fileID: 8300000, guid: c0b5f4ca9974bf5468a0bb18d6332066, type: 3}
 --- !u!4 &1993691068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551767617885050053, guid: ebf8234bb13d99d4cb232bbdf2107787, type: 3}
